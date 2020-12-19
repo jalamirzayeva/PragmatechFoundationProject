@@ -1,0 +1,21 @@
+#header{
+    width: 2000px;
+    height: 300px;
+    background-color: rgb(83, 165, 63);
+}
+
+#slider{
+    width: 2000px;
+    height: 800px;
+    background-color: rgb(194, 92, 61);
+
+}
+
+#featured-content{
+    width: 2000px;
+    height: 1200px;
+    background-color: yellowgreen;
+    
+
+}
+

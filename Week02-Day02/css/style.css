@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    background: url( '../Week02-Day02/img/home-features-background.jpg');
+
+}
+#header{
+    border: 1px solid green;
+    background: url( '../Week02-Day02/img/home-features-background.jpg');
+}
+.header-navbar{
+    border: 1px solid green;
+}
+.header-slider{
+    border: 1px solid green;
+}

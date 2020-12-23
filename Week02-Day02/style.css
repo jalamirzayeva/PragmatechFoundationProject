@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    
+
+}
+#header{
+  
+    height: 650px;
+    background-size: 100px 100px;
+    background-color: rgb(252, 252, 250);
+    background: url( '../Week02-Day02/img/54848844b2124ba2b982df21dc10dd04.jpg');
+}
+.header-navbar{
+    padding: 35px;
+    background: white;
+
+    background: rgba(red, green, blue, alpha);
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+.navbar-logo{
+
+   
+
+}
+.navbar-logo img{
+    width: 70px;
+}
+
+.navbar-links{}
+
+.navbar-links ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+.navbar-links ul li{
+   
+    list-style: none;
+    margin: 0px 10px;
+    margin-top: 15px;
+}
+.navbar-links ul li:hover{
+    border-bottom: 2px;
+    color: darkgreen;
+}
+.header-slider{
+    
+   
+}

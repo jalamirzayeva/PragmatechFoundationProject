@@ -1,35 +1,39 @@
 body{
     margin: 0px;
-    
 
 }
 #header{
   
     height: 650px;
+    background-repeat: no-repeat;
     background-size: 100px 100px;
     background-color: rgb(252, 252, 250);
     background: url( '../Week02-Day02/img/54848844b2124ba2b982df21dc10dd04.jpg');
+    background-position: center -16px;
 }
 .header-navbar{
-    padding: 35px;
-    background: white;
-
-    background: rgba(red, green, blue, alpha);
+  
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-nav{
+    background-color: rgba(red, green, blue, alpha);
+    padding: initial;
     display: flex;
     justify-content:space-between;
-   
+    margin: 0px auto;
+    align-items: center;
+ 
 }
 
 .navbar-logo{
-
-   
+    width: 90px;
 
 }
 .navbar-logo img{
-    width: 70px;
+    width: 90px;
+    height: 96px;
 }
 
 .navbar-links{}
@@ -39,16 +43,20 @@ body{
     padding: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .navbar-links ul li{
-   
     list-style: none;
-    margin: 0px 10px;
-    margin-top: 15px;
+    margin: 0px 10px 0px 0px;
+    margin-bottom: 0px;
+    padding: 40px 15px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 .navbar-links ul li:hover{
-    border-bottom: 2px;
-    color: darkgreen;
+    border-bottom: 3px solid green;
+    color: rgb(12, 165, 12);
+    box-sizing: border-box;
 }
 .header-slider{
     

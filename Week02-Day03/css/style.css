@@ -27,7 +27,7 @@ body{
      border: 1px solid rgb(206, 214, 216);
  }
  .column:hover{
-     box-shadow: 0px 0px 20px rgb(100, 104, 105);
+     box-shadow: 0px 0px 40px rgb(219, 140, 65);
  }
  .column img{
      width: calc(100% + 20px);

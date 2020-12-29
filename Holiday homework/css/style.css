@@ -6,11 +6,12 @@ body{
 #header{
     margin: 0px auto;
     text-align: center;
-    width: 825px;
+    
     height: 133px;
     
 }
 .header-navbar{
+    margin: 0px 50px;
     display: inline-block;
     background-color: rgb(135, 52, 46);
     text-align: center;
@@ -19,51 +20,64 @@ body{
     justify-content: space-between;
    
 }
+.header-navbar-items{
+    display: flex;
+}
 .search-box{
-    width: 320px;
+    width: 666px;
     height: 33px;
     margin: 17px 26px;
     border: 1px solid wheat;
     background-color: wheat;
 
 }
+.find-font{
+    margin: 4px 0px;
+    margin-left: -578px;
+    color:rgb(135, 52, 46) ;
+}
 .search-box-icon{
     
     width: 20px;
-    margin: 5px 289px;
+    margin: -37px 630px;
     color: rgb(135, 52, 46) ;
 
 
 }
 .upload{
-    width: 90px;
+    width: 157px;
     height: 33px;
-    margin: 17px 0px;
+    margin: 17px 22px;
     border: 1px solid wheat;
     background-color: wheat;
 }
 .upload-icon{
     color: rgb(135, 52, 46);
-    margin: 4px 39px;
+    margin: -31px;
+    margin-left: -158px;
 
 }
+.upload-font{
+    margin: 1px 0px;
+    color: rgb(135, 52, 46);
+}
  .user{
-     width: 40px;
+     width: 49px;
      height: 33px;
-     margin: 17px 0px;
+     margin: 17px 13px;
      border: 1px solid wheat;
      background-color: wheat;
  }
  .user-icon{
      color: rgb(135, 52, 46);
-     margin: 5px;
+     margin: 1px;
  }
  .p1{
     margin: -40px;
     color: wheat;
  }
 .header-navbar-links{
-    word-spacing: 0px;
+    word-spacing: 65px;
     height: 55px;
     color: wheat;
     border-top: 3px solid wheat;
@@ -83,39 +97,109 @@ body{
 #slider{
     display: flex;
     border: 1px solid wheat;
-    width: 825px;
     height: 410px;
-    margin: 6px auto;
-    text-align:start;
-    justify-content: start;
+   
 }
-.p2{
-    width: 300px;
-    height:25px ;
-    border: 1px solid wheat;
-    margin: 0px 0px;
-    color: wheat;
-}
-.p3{
-    width: 300px;
-    height:25px ;
-    border: 1px solid wheat;
-    margin: 0px 0px;
-    color: wheat;
-}
-.slider-item1{
-    width: 520px;
-    height: 380px;
-    border: 1px solid wheat;
-    margin: 27px 0px;
+.slider-header{}
+.slider-header1{}
+.slider-header2{}
+.slider-items{}
+.slider-item1{}
+.slider-item2{}
+
+
+
+
+#footer{
+    border-top: 3px solid wheat;
+
+    height: 250px;
 
 }
-.slider-item2{
-    width: 300px;
-    height: 380px;
-    border: 1px solid wheat;
-    margin: 27px 0px;
-
+.container{
+    margin: 11px 0px;
+    border: 3px solid rgb(135, 52, 46);
 }
+.icons{
+    margin: 9px 23px;
+    display: flex;
+   
+}
+.twitter{
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    color: rgb(135, 52, 46) ;
+}
+.twitter-icon{
+    margin: 10px 15px;
+
+    color: rgb(135, 52, 46) ;
+} 
+.linkedin{
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    color: rgb(135, 52, 46) ;
+}
+.linkedin-icon{
+    margin: 10px 16px;
+
+    color: rgb(135, 52, 46) ;
+}
+
+.facebook{
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    color: rgb(135, 52, 46) ;
+}
+.facebook-icon{
+    margin: 10px 18px;
+
+    color: rgb(135, 52, 46) ;
+}
+.navbar{
+    margin: 29px 566px;
+  
+}
+.navbar ul {
+    word-spacing:8px;
+    margin: 34px -568px;
+    display: flex;
+   
+}
+.navbar ul li{
+    text-align: center;
+    color: wheat;
+ 
+    list-style: none;
+    display: flex;
+    display: inline-block;
+ 
+}
+.end{
+    margin: -4px 37px;
+    color: wheat;
+}
+.end-navbar{
+    margin: 26px 0px;
+}
+   
+.end-navbar ul{
+    word-spacing:8px;
+}
+.end-navbar ul li{
+    text-align: center;
+    color: wheat;
+    
+    list-style: none;
+    display: flex;
+    display: inline-block
+}
+
 
 

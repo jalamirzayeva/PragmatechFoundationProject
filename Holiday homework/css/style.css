@@ -1,0 +1,121 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    background: rgb(135, 52, 46);
+}
+#header{
+    margin: 0px auto;
+    text-align: center;
+    width: 825px;
+    height: 133px;
+    
+}
+.header-navbar{
+    display: inline-block;
+    background-color: rgb(135, 52, 46);
+    text-align: center;
+    display: flex;
+    color: wheat;
+    justify-content: space-between;
+   
+}
+.search-box{
+    width: 320px;
+    height: 33px;
+    margin: 17px 26px;
+    border: 1px solid wheat;
+    background-color: wheat;
+
+}
+.search-box-icon{
+    
+    width: 20px;
+    margin: 5px 289px;
+    color: rgb(135, 52, 46) ;
+
+
+}
+.upload{
+    width: 90px;
+    height: 33px;
+    margin: 17px 0px;
+    border: 1px solid wheat;
+    background-color: wheat;
+}
+.upload-icon{
+    color: rgb(135, 52, 46);
+    margin: 4px 39px;
+
+}
+ .user{
+     width: 40px;
+     height: 33px;
+     margin: 17px 0px;
+     border: 1px solid wheat;
+     background-color: wheat;
+ }
+ .user-icon{
+     color: rgb(135, 52, 46);
+     margin: 5px;
+ }
+ .p1{
+    margin: -40px;
+    color: wheat;
+ }
+.header-navbar-links{
+    word-spacing: 0px;
+    height: 55px;
+    color: wheat;
+    border-top: 3px solid wheat;
+    border-bottom: 3px solid wheat;
+  
+}
+.header-navbar-links ul{
+    margin: 16px;
+    justify-content: space-between;
+}
+.header-navbar-links ul li{
+   
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+}
+#slider{
+    display: flex;
+    border: 1px solid wheat;
+    width: 825px;
+    height: 410px;
+    margin: 6px auto;
+    text-align:start;
+    justify-content: start;
+}
+.p2{
+    width: 300px;
+    height:25px ;
+    border: 1px solid wheat;
+    margin: 0px 0px;
+    color: wheat;
+}
+.p3{
+    width: 300px;
+    height:25px ;
+    border: 1px solid wheat;
+    margin: 0px 0px;
+    color: wheat;
+}
+.slider-item1{
+    width: 520px;
+    height: 380px;
+    border: 1px solid wheat;
+    margin: 27px 0px;
+
+}
+.slider-item2{
+    width: 300px;
+    height: 380px;
+    border: 1px solid wheat;
+    margin: 27px 0px;
+
+}
+
+

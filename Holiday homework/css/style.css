@@ -1,6 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
+    color: wheat;
+    margin: 0px auto;
     background: rgb(135, 52, 46);
 }
 #header{
@@ -94,19 +95,86 @@ body{
     display: inline-block;
     justify-content: space-between;
 }
+
+
+/*-------------------------------------------------------*/
+
+
+
 #slider{
     display: flex;
-    border: 1px solid wheat;
-    height: 410px;
+    height: 2000px;
    
 }
-.slider-header{}
-.slider-header1{}
-.slider-header2{}
-.slider-items{}
-.slider-item1{}
-.slider-item2{}
+.slider-item1{
+    
+    display: grid;
+    width: 1278px;
+    border: 1px solid rgb(252, 252, 252);
+    
+}
+.item1-1{
+    margin-top: -420px;
+    border: 1px solid rgb(194, 194, 197);
+    height: 576px;
+}
 
+  
+.col-8{
+    width: 833px;
+    height: 542px;
+    color: rgb(135, 52, 46);
+    background: wheat;
+}
+.item1-right{
+    display: block;
+    width: 406px;
+    margin: -541px 852px;
+    color: rgb(135, 52, 46);
+    background: wheat;
+  
+}
+.col-2{
+    height: 270px;
+    border: 10px solid  rgb(135, 52, 46);
+  
+}
+.row2{
+    display: flex;
+    margin: 559px -11px;
+   
+}
+.col-4{
+    width: 406px;
+    margin: 0px 9px;
+    height: 253px;
+    background: wheat;
+    color:rgb(135, 52, 46) ;
+}
+.col-4-empty{
+
+}
+.item1-2{
+    margin: -435px 0px;
+    margin-right: 755px;
+    border: 1px solid rgb(235, 53, 21);
+    height: 576px;
+}
+}
+.item1-3{
+    height: 576px;
+    border:1px solid rgb(247, 242, 242) ;
+}
+.slider-item2{
+    
+    width: 738px;
+    height: 1100px;
+    border: 1px solid rgb(238, 238, 238);
+    color: wheat;
+}
+
+
+/*-------------------------------------------------------*/
 
 
 

@@ -106,66 +106,101 @@ body{
     height: 2000px;
    
 }
-.slider-item1{
-    
-    display: grid;
+.item1{
+    display: block;
     width: 1278px;
     border: 1px solid rgb(252, 252, 252);
     
 }
-.item1-1{
-    margin-top: -420px;
-    border: 1px solid rgb(194, 194, 197);
-    height: 576px;
+.row1{
+    
+    display: flex;
+    margin: 4px 8px;
+    width: 1121px;
+    height: 600px;
+    
+}
+.col1{
+    width: 60%;
+    margin-top: 38px;
+    margin-left: -68px;
+    margin-right: 25px;
+    
+
+}
+.col1-1{
+    margin: 0px auto;
+    height: 362px;
+    width: 722px;
+    border: 1px solid wheat;
+    background: wheat;
+}
+.row1-2{
+    margin: 19px -11px;
+    display: flex;
+    height: 170px;
+    width: 743px;
+    
+}
+.col1-2{
+    margin: 0px auto;
+    height: 170px;
+    width: 350px;
+    background: wheat;
+    border: 1px solid wheat
+}
+.col1-3{
+    margin: 0px auto;
+    height: 170px;
+    width: 350px;
+    background: wheat;
+    border: 1px solid wheat
 }
 
-  
-.col-8{
-    width: 833px;
-    height: 542px;
-    color: rgb(135, 52, 46);
+.col2{
+    margin: 44px;
+    width: 40%;
+    margin-top: 38px;
+    
+
+}
+.col2-1{
+    margin: 0px auto;
+    height: 170px;
+    width: 350px;
     background: wheat;
+    border: 1px solid wheat
+    
 }
-.item1-right{
-    display: block;
-    width: 406px;
-    margin: -541px 852px;
-    color: rgb(135, 52, 46);
+.col2-2{
+    margin: 20px auto;
+    height: 170px;
+    width: 350px;
     background: wheat;
-  
+    border: 1px solid wheat;
 }
-.col-2{
-    height: 270px;
-    border: 10px solid  rgb(135, 52, 46);
-  
+.col2-3{
+    margin: 0px auto;
+    height: 170px;
+    width: 350px;
+    border: 1px solid wheat;
 }
+
 .row2{
     display: flex;
-    margin: 559px -11px;
-   
-}
-.col-4{
-    width: 406px;
-    margin: 0px 9px;
-    height: 253px;
-    background: wheat;
-    color:rgb(135, 52, 46) ;
-}
-.col-4-empty{
+    margin: 0px 72px;
+    border: 1px solid black;
 
 }
-.item1-2{
-    margin: -435px 0px;
-    margin-right: 755px;
-    border: 1px solid rgb(235, 53, 21);
-    height: 576px;
+
+.row3{
+    display: flex;
+    margin: 1225px -1213px;
+    border: 1px solid black;
+
 }
-}
-.item1-3{
-    height: 576px;
-    border:1px solid rgb(247, 242, 242) ;
-}
-.slider-item2{
+
+.item2{
     
     width: 738px;
     height: 1100px;

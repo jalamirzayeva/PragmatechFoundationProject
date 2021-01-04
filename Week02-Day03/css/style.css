@@ -27,7 +27,8 @@ body{
      border: 1px solid rgb(206, 214, 216);
  }
  .column:hover{
-     box-shadow: 0px 0px 40px rgb(219, 140, 65);
+     box-shadow: 0px 0px 20px rgb(138, 130, 122);
+     transition: all .3s ease;
  }
  .column img{
      width: calc(100% + 20px);
@@ -48,8 +49,10 @@ body{
     background: lightgrey;
     color: darkgray;
     display: inline-block;
+    transition: all .2s ease-in;
 }
 .social div:hover{
     background: darkgray;
     color: lightgrey;
+    
 }

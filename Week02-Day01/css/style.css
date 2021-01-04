@@ -1,4 +1,10 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 #site{}
+
 .site-container{
     text-align: center;
     width: 700px;

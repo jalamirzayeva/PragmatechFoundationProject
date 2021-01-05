@@ -1,5 +1,12 @@
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 0px;
+    padding: 0px;
 }
 
 .container {
@@ -94,7 +101,7 @@ body {
 }
 
 .btn-border {
-    border: 1px solid rgba(8, 4, 59, 0.787)
+    border: 3px solid #749283
 }
 
 .btn-radius {
@@ -112,13 +119,13 @@ body {
 }
 
 .btn-second {
-    background: purple;
+    background:  rgb(218, 157, 97);
     color: white;
 }
 
 .btn-second:hover {
     background: white;
-    color: purple;
+    color: rgba(8, 4, 59, 0.787);
 }
 
 .btn-third {

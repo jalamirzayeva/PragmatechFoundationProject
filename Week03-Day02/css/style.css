@@ -1,46 +1,106 @@
-.container{
-    margin: 30px 700px auto;
-    width: 500px;
-    height: 500px;
-    background-color: #d65f28;
-    position: relative;
-}
-.instagram-like{
-    width: 184px;
-    height: 162px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    margin: auto;
-    background:
-    url("https://imgur.com/rksyGE8.png") no-repeat center / contain;
-    opacity: 0px;
-    transform: scale(0);
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+  }
+  
+  
+.container {
+      display: flex;
+      justify-content: center;
    
+
 }
- @keyframes like-heart-animation{
-     0% {
-         opacity: 0;
-         transform: scale(0);
-     }
-     15% {
-         opacity: .9;
-         transform: scale(1.2);
-     }
-     30% {
-         transform: scale(.95);
-     }
-     45%,80% {
-         opacity: .9;
-        transform: scale(1); 
+.col-4{
+    height: 450px;
+    width: 300px;
+    margin-left: 10px;
+}
+.img{
+    overflow: hidden;
+    
+}
+.col-4 img{
+    height: 245px;
+    width: 290px;
+    object-fit: cover;
+    position: relative;
+    transition: all .7s ease;
+}
+.col-4 img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+    
+}
+.learn-more{
+    border: 1px solid white;
+    color: black ;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 2px;
+    padding: 4px;
+    position: absolute;
+    top: 122px;
+    left: 500px;
+    transition: all .9s ease;
+}
+.learn-more:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(242, 123, 102, .7);
+}
+.learn-more2{
+    border: 1px solid white;
+    color: black ;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 2px;
+    padding: 4px;
+    position: absolute;
+    top: 122px;
+    left: 812px;
+    transition: all .9s ease;
+}
+.learn-more2:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(249, 203, 143, .7);
+}
+.learn-more3{
+    border: 1px solid white;
+    color: black ;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 2px;
+    padding: 4px;
+    position: absolute;
+    top: 122px;
+    left: 1118px;
+    transition: all .9s ease;
+}
+.learn-more3:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(24, 187, 125, .7);
+}
+.small-box{
+    height: 30px;
+    background: #595959;
+    padding-top: 14px;
+    text-align: center;
+}
+.big-box1{
+    height: 158px;
+    background: #f27c66;
+    text-align: center;
+}
+.text1{
+    padding: 50px;
+}
+.big-box2{
+    height: 158px;
+    background: #f9cb8f;
+    text-align: center;
+}
 
-     }
- }
-.container:hover .instagram-like{
-    animation-duration: 1000ms;
-    animation-name: like-heart-animation;
-    animation-timing-function: ease-in-out;
-
+.big-box3{
+    height: 158px;
+    background: #18bb7c;
+    text-align: center;
 }

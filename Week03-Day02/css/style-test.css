@@ -1,0 +1,49 @@
+body{
+    color: white;
+}
+
+.animation-box{
+    width: 1000px;
+    height: 700px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.animation,.animation0,.animation1,.animation2{
+    width: 240px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 100px;
+    position: relative;
+    top: 100px;
+    left: 98px;
+
+    animation-name: test;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.animation{
+    background-color: lightcoral;
+}
+
+.animation0{
+    background-color: rgb(34, 206, 120);
+}
+
+.animation1{
+    background-color: rgb(230, 253, 22);
+}
+.animation2{
+    background-color: rgb(173, 16, 16);
+}
+@keyframes test{
+    from{margin-left: 4px;
+    }
+
+
+
+    to{margin-left: 1300px;
+        transform: rotateZ(360deg)}
+}

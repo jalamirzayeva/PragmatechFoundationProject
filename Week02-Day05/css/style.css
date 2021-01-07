@@ -42,7 +42,7 @@ body{
 .price-item1{
     padding:  0px;
     margin:0px 100px;
-    box-sizing: border-box;
+  
     min-height: 480px;
     width: 240px;
     border: 1px solid rgb(230, 229, 229);

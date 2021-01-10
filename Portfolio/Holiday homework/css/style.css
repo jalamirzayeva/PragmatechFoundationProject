@@ -1,0 +1,243 @@
+body{
+    color: wheat;
+    background: rgb(135, 52, 46);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container1{
+    width: 1100px;
+    margin: 11px 278px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.mar{
+    margin: 5px 10px;
+}
+.flex{
+    display: flex; 
+    box-sizing: border-box; 
+}
+/* HEADER */
+.btn{
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn-options{
+    background-color:rgb(135, 52, 46);
+    border: 1px solid wheat;
+}
+
+.txt-options{
+    font-size: 26px;
+}
+.box2{
+    padding: 0 10px;
+    font-size: 12px;
+}
+.box3{
+    text-align: center;
+    font-size: 14px;
+}
+/* HEADER navbar */
+.row ul{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+    padding: 5px 20px;
+    font-size: 20px;
+    margin: 0px;
+}
+.row li{
+    padding: 0 30px;
+}
+
+[class^="col-"] {
+    box-sizing: border-box;
+    
+}
+.col-1{
+    width: calc((100%/12)*1);
+}
+.col-2{
+    width: calc((100%/12)*2);
+}
+.col-3{
+    width: calc((100%/12)*3);
+}
+.col-4{
+    width: calc((100%/12)*4);
+}
+.col-5{
+    width: calc((100%/12)*5);
+}
+.col-6{
+    width: calc((100%/12)*6);
+}
+.col-7{
+    width: calc((100%/12)*7);
+}
+.col-8{
+    width: calc((100%/12)*8);
+}
+.col-9{
+    width: calc((100%/12)*9);
+}
+.col-10{
+    width: calc((100%/12)*10);
+}
+.col-11{
+    width: calc((100%/12)*11);
+}
+.col-12{
+    width: calc((100%/12)*12);
+}
+
+.row-3{
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 5px 0px 5px;
+    align-items: center;
+   
+}
+.col-4 b{
+    padding: 0 0 0 20px;
+}
+
+
+
+.border{
+    border-top: 2px solid rgb(105, 103, 103);
+}
+.boxmini{
+    height: 60px;
+    border: 1px solid wheat;
+    background: wheat;
+    box-sizing: border-box;
+    margin: 5px;
+}
+.box{
+    height: 158px;
+    border: 1px solid wheat;
+    box-sizing: border-box;
+    background: wheat;
+    margin: 5px;
+}
+.boxmax{
+    height: 326px;
+    border: 1px solid wheat;
+    box-sizing: border-box;
+    background: wheat;
+    color: rgb(135, 52, 46);
+    
+    margin: 5px;
+}
+.padd{
+    padding: 0px 0px 10px 20px;
+}
+
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 0px 281px;
+    border-top: 1px solid wheat;
+    
+}
+.container2{
+    margin-right: 50px;
+    border: 3px solid rgb(135, 52, 46);
+}
+.icons{
+    margin: 9px 23px;
+    display: flex;
+   
+}
+.twitter{
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    color: rgb(135, 52, 46) ;
+}
+.twitter-icon{
+    margin: 15px 17px;
+
+    color: rgb(135, 52, 46) ;
+} 
+.linkedin{
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    color: rgb(135, 52, 46) ;
+}
+.linkedin-icon{
+    margin: 15px 18px;
+
+    color: rgb(135, 52, 46) ;
+}
+
+.facebook{
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    color: rgb(135, 52, 46) ;
+}
+.facebook-icon{
+    margin: 15px 20px;
+
+    color: rgb(135, 52, 46) ;
+}
+.navbar{
+    margin: -17px 566px;
+  
+}
+.navbar ul {
+    word-spacing:0px;
+    margin: 34px -568px;
+    display: flex;
+   
+}
+.navbar ul li{
+    text-align: center;
+    color: wheat;
+ 
+    list-style: none;
+    display: flex;
+    display: inline-block;
+ 
+}
+.end{
+    margin: -4px 37px;
+    color: wheat;
+}
+.end-navbar{
+    margin: 20px 0px;
+}
+   
+.end-navbar ul{
+    word-spacing:0px;
+}
+.end-navbar ul li{
+    text-align: center;
+    color: wheat;
+    
+    list-style: none;
+    display: flex;
+    display: inline-block
+}
+
+
+
+
+
+
+
+
+

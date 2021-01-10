@@ -1,0 +1,72 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    background: rgb(241, 240, 241);
+    color: rgb(165, 160, 160);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+#HEADER{}
+    .header-navbar{
+    height: 40px;
+    background: lightgray;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    .search-icon{
+    
+    
+        color:  rgb(96, 161, 124);
+        
+    }
+}
+        
+       
+.navbar-nav{
+    display: flex;
+    margin: 0px auto;
+    padding: 30px 120px;
+    justify-content: space-between;
+    align-items: center;
+   
+            
+    .navbar-logo{
+        
+        }
+    .navbar-links{
+        color: rgb(96, 161, 124);
+        margin: 0px;
+        padding: 0px;
+       
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            li{
+                padding: 6px;
+                list-style: none;
+                cursor: pointer;
+                transition: all 200ms ease;
+                box-sizing: border-box;
+                transition: all .7s ease;
+
+                &:hover{
+                    color: rgb(231, 126, 88);
+
+                }
+            }
+        }
+    }
+}
+        
+    
+
+#SLIDER{
+    .slider{
+       display: flex;
+       justify-content: center;
+    }
+}   

@@ -1,0 +1,166 @@
+.top-navbar {
+  height: 40px;
+  border-bottom: 1px solid white;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.slider {
+  height: 640px;
+}
+
+body {
+  margin: 0px auto;
+  padding: 0px;
+  background: #eeecec;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+#header .top-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  background: #747272;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: transparent;
+  font-weight: 600;
+  padding: 7px 20px;
+  color: white;
+}
+
+#header .top-navbar .tmwh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .top-navbar .tmwh .tel {
+  padding: 0px 10px;
+}
+
+#header .top-navbar .tmwh .tel .tel-icon i {
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+  color: #F27C66;
+}
+
+#header .top-navbar .tmwh .tel .tel-icon i:hover {
+  color: white;
+}
+
+#header .top-navbar .tmwh .mail {
+  padding: 0px 10px;
+}
+
+#header .top-navbar .tmwh .mail .mail-icon i {
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+  color: #18BB7C;
+}
+
+#header .top-navbar .tmwh .mail .mail-icon i:hover {
+  color: white;
+}
+
+#header .top-navbar .tmwh .work-hours {
+  padding: 0px 8px;
+}
+
+#header .top-navbar .tmwh .work-hours .work-hours-icon i {
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+  color: #F9CB8F;
+}
+
+#header .top-navbar .tmwh .work-hours .work-hours-icon i:hover {
+  color: white;
+}
+
+#header .top-navbar .sl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .top-navbar .sl .search {
+  padding: 0px 10px;
+}
+
+#header .top-navbar .sl .search .search-icon i {
+  color: white;
+  cursor: pointer;
+}
+
+#header .top-navbar .sl .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+#header .top-navbar .sl .lang .az {
+  padding: 0px 3px;
+}
+
+#header .top-navbar .sl .lang .eng {
+  padding: 0px 3px;
+}
+
+#header .top-navbar .sl .lang .ru {
+  padding: 0px 3px;
+}
+
+#navbar-slider {
+  height: 700px;
+  width: 100%;
+  background: url("../img/slider-3.jpg") no-repeat center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-weight: 700;
+  font-size: large;
+  margin: 0px 0px;
+}
+
+#navbar-slider .navbar {
+  height: 70px;
+  border: 0px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar-slider .navbar .logo {
+  margin-left: 50px;
+}
+
+#navbar-slider .navbar .navbar-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar-slider .navbar .navbar-nav ul li {
+  list-style: none;
+  margin-right: 22px;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+#navbar-slider .navbar .navbar-nav ul li:hover {
+  cursor: pointer;
+  color: #F27C66;
+}

@@ -1,0 +1,140 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container-full {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+[class^="col-"] {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.col-1 {
+    width: calc((100%/12)*1)
+}
+
+.col-2 {
+    width: calc((100%/12)*2)
+}
+
+.col-3 {
+    width: calc((100%/12)*3)
+}
+
+.col-4 {
+    width: calc((100%/12)*4)
+}
+
+.col-5 {
+    width: calc((100%/12)*5)
+}
+
+.col-6 {
+    width: calc((100%/12)*6)
+}
+
+.col-7 {
+    width: calc((100%/12)*7)
+}
+
+.col-8 {
+    width: calc((100%/12)*8)
+}
+
+.col-9 {
+    width: calc((100%/12)*9)
+}
+
+.col-10 {
+    width: calc((100%/12)*10)
+}
+
+.col-11 {
+    width: calc((100%/12)*11)
+}
+
+.col-12 {
+    width: calc((100%/12)*12)
+}
+
+.bg-first {
+    background: red;
+    color: green;
+}
+
+.bg-second {
+    background: purple;
+    color: white;
+}
+
+.bg-third {
+    background: orange;
+    color: black;
+}
+
+
+/* buttons */
+
+.btn {
+    padding: 15px 30px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn-border {
+    border: 3px solid #749283
+}
+
+.btn-radius {
+    border-radius: 10px;
+}
+
+.btn-first {
+    background: red;
+    color: green;
+}
+
+.btn-first:hover {
+    background: green;
+    color: red;
+}
+
+.btn-second {
+    background:  rgb(218, 157, 97);
+    color: white;
+}
+
+.btn-second:hover {
+    background: white;
+    color: rgba(8, 4, 59, 0.787);
+}
+
+.btn-third {
+    background: orange;
+    color: black;
+}
+
+.btn-third:hover {
+    background: black;
+    color: orange;
+}

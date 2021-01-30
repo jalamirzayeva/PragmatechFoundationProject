@@ -1,0 +1,195 @@
+@import '../color.scss';
+
+body{
+    margin: 0px auto;
+    padding: 0px;
+
+}
+#header-slider{
+    width: 100%;
+    // header
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                height: 60px;
+                width: 76px;
+                object-fit: cover;
+            }
+            h3{
+                font-family: 'Raleway', sans-serif;
+
+
+                color: $main-color-4;
+                font-weight: 500;
+                font-size: 30px;
+                
+            }
+            
+            }
+        }
+
+        .navbar{
+            
+            ul{
+                display: flex;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+
+                li{
+                    list-style: none;
+                    color: $main-color-4;
+                    border-right: 1px solid lightgray;
+                    margin-right: 8px;
+                    padding: 0px 15px;
+                    &:hover{
+                        color: $main-color-1;
+                        transition: all .5s ease;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+        }
+        .search{
+            border-radius: 40px;
+            background: #EA9685;
+            padding: 10px 20px;
+            cursor: pointer;
+                i{
+                    
+                    color: rgb(255, 255, 255);
+                }
+                &:hover {
+                    background:$main-color-3;
+                    transition: all .5s linear;
+                    
+                }
+
+            }
+    // slider
+    .slider{
+        height: 85vh;
+        width: 100%;
+        .slider-images{
+
+            img{
+            height: 85vh;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            }
+            .btns{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 85vh;
+                width: 100%;
+                
+                .btn{
+                border: none;
+                margin: 15px;
+                width: 60px;
+                background: rgba(255,255,255,.6);
+                color: rgb(100, 100, 100);
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+                padding: 15px 10px;
+                border-radius: 47px;
+                
+                &:hover{
+                    background: rgba(255,255,255,.4);
+                    color: rgb(243, 235, 235);
+                    transition: all .5s ease;
+                }
+            } 
+            }
+        }
+
+        
+    }
+    }
+
+
+    // latest courses 
+#latest-courses{
+    height: 85vh;
+    width: 100%;
+    border: 3px solid black;
+    h1{
+        margin: 0px 780px;
+        padding: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        transition: all .6s ease;
+        &:hover{
+            color: $main-color-1;
+            cursor: pointer;
+        }
+        
+    }
+    .latest-courses-container{
+        margin: 0px auto;
+        margin-right: 350px;
+        height: 60vh;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .col-4{
+            border: 1px solid black;
+            border-radius: 7px;
+            height: 450px;
+            width: 300px;
+            margin-left: 20px;
+            padding: 0px 0px;
+            overflow: hidden;
+            .img{
+            overflow: hidden;
+            img{
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            transition: all .9s ease;
+            &:hover{
+                transform: scale(1.1);
+                overflow: hidden;
+            }
+            }
+            .learn-more{
+                border: 1px solid rgb(247, 246, 246);
+                color: rgb(255, 255, 255);
+                font-family: 'Raleway', sans-serif;
+                background-color: rgba(161, 158, 158, 0.7);
+                border-radius: 20px;
+                padding: 10px;
+                position: absolute;
+                z-index: 2;
+                top: 30%;
+                left: 36%;
+                transition: all .9s ease;
+                &:hover{
+                    cursor: pointer;
+                    background: rgba(0,0,0,.5);
+                    
+                }
+            }
+            
+            }
+            .course-name{}
+            .course-info{}
+        }
+    }
+
+}

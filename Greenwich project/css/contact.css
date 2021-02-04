@@ -1,1 +1,109 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+#contact-head {
+  font-family: 'Raleway', sans-serif;
+  height: 200px;
+  width: 100%;
+  border: 1px solid white;
+  background: black;
+}
+
+#contact-head .contact-text {
+  margin: auto;
+  margin-top: 80px;
+  color: #f27c66;
+  padding: 15px 0px;
+  border-radius: 8px 0px;
+  width: 15%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+}
+
+#contact-page .contact-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 70%;
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#contact-page .contact-page-container .contact-us {
+  margin-right: 10px;
+  width: 60%;
+}
+
+#contact-page .contact-page-container .contact-us h1 {
+  margin: 15px 0px;
+  font-size: 35px;
+  color: #454545;
+  font-weight: 500;
+}
+
+#contact-page .contact-page-container .contact-us .body * {
+  font-family: 'Raleway', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#contact-page .contact-page-container .contact-us .body input[type=text], #contact-page .contact-page-container .contact-us .body select, #contact-page .contact-page-container .contact-us .body textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+#contact-page .contact-page-container .contact-us .body .col-75 {
+  float: left;
+  width: 95%;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+#contact-page .contact-page-container .contact-us .body .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#contact-page .contact-page-container .contact-us .body .button .send-btn {
+  float: right;
+  margin-right: 20px;
+  font-size: 15px;
+  border: 1px solid #f27c66;
+  border-radius: 10px 0px;
+  color: #5F5F5F;
+  background: white;
+  padding: 10px 55px;
+}
+
+#contact-page .contact-page-container .contact-us .body .button .send-btn:hover {
+  background: #f27c66;
+  color: white;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#contact-page .contact-page-container .course-info {
+  width: 40%;
+}
+
+#contact-page .contact-page-container .course-info h1 {
+  margin: 15px 0px;
+  font-size: 35px;
+  color: #454545;
+  font-weight: 500;
+}
+
+#contact-page .contact-page-container .course-info p {
+  color: #5F5F5F;
+  margin: 5px 0px;
+}
+
+#contact-page .contact-page-container .course-info h3 {
+  color: #454545;
+  font-size: 20px;
+  margin: 20px 0px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -27,6 +27,21 @@ let myName="Jale";
     console.log(course)
    
 
+    function Capet(){
+
+    }
+
+    Capet(1)
+    Capet(2)
+    Capet(3)
+    Capet(4)
+    Capet(5) 
+    Capet(6)
+    Capet(7)
+    Capet(8)
+    Capet(9)
+    Capet(10)
+    console.log(CapEt)
   
     
 

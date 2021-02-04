@@ -1,1 +1,259 @@
-/* No CSS *//*# sourceMappingURL=courses.css.map */
+#courses-head {
+  font-family: 'Raleway', sans-serif;
+  height: 200px;
+  width: 100%;
+  border: 1px solid white;
+  background: black;
+}
+
+#courses-head .courses-text {
+  margin: auto;
+  margin-top: 80px;
+  color: #f27c66;
+  padding: 15px 0px;
+  border-radius: 8px 0px;
+  width: 15%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+}
+
+#courses-page .courses-page-container {
+  margin: auto;
+  height: 120vh;
+  width: 60%;
+  margin-top: 50px 0px;
+}
+
+#courses-page .courses-page-container .courses-row {
+  margin: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 {
+  border-radius: 10px;
+  height: 450px;
+  width: 300px;
+  margin-left: 35px;
+  padding: 0px 0px;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img {
+  overflow: hidden;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img img {
+  height: 280px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  overflow: hidden;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-1 {
+  border: 1px solid #f7f6f6;
+  color: white;
+  background-color: rgba(161, 158, 158, 0.7);
+  border-radius: 7px 0px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 36%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-1:hover {
+  cursor: pointer;
+  background: #d36c59;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-2 {
+  border: 1px solid #f7f6f6;
+  color: white;
+  background-color: rgba(161, 158, 158, 0.7);
+  border-radius: 7px 0px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 36%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-2:hover {
+  cursor: pointer;
+  background: #e4ba83;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-3 {
+  border: 1px solid #f7f6f6;
+  color: white;
+  background-color: rgba(161, 158, 158, 0.7);
+  border-radius: 7px 0px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 36%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-3:hover {
+  cursor: pointer;
+  background: #13a069;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-name {
+  background: #333333;
+  padding: 15px;
+  margin: -2px 0px;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-info-1 {
+  padding: 17px;
+  background: #d36c59;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-info-2 {
+  padding: 17px;
+  background: #e4ba83;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-info-3 {
+  padding: 17px;
+  background: #13a069;
+}
+
+#courses-page .courses-page-container .courses-row {
+  margin: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 {
+  border-radius: 10px;
+  height: 450px;
+  width: 300px;
+  margin-left: 35px;
+  padding: 0px 0px;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img {
+  overflow: hidden;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img img {
+  height: 280px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  overflow: hidden;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-4 {
+  border: 1px solid #f7f6f6;
+  color: white;
+  background-color: rgba(161, 158, 158, 0.7);
+  border-radius: 7px 0px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 36%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-4:hover {
+  cursor: pointer;
+  background: #b0b0b0;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-5 {
+  border: 1px solid #f7f6f6;
+  color: white;
+  background-color: rgba(161, 158, 158, 0.7);
+  border-radius: 7px 0px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 36%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-5:hover {
+  cursor: pointer;
+  background: #4bbcd7;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-6 {
+  border: 1px solid #f7f6f6;
+  color: white;
+  background-color: rgba(161, 158, 158, 0.7);
+  border-radius: 7px 0px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 36%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-6:hover {
+  cursor: pointer;
+  background: #5F5F5F;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-name {
+  background: #454545;
+  padding: 15px;
+  margin: -2px 0px;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-info-4 {
+  padding: 17px;
+  background: #b0b0b0;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-info-5 {
+  padding: 17px;
+  background: #4bbcd7;
+}
+
+#courses-page .courses-page-container .courses-row .col-4 .course-info-6 {
+  padding: 17px;
+  background: #5F5F5F;
+}
+/*# sourceMappingURL=courses.css.map */

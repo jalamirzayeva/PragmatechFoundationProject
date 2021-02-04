@@ -22,7 +22,7 @@ let imgindex=1
 
 box.appendChild(image)
 col.appendChild(box)
-row.appendChild(col)
+
 container.appendChild(row)
 section.appendChild(container)
 

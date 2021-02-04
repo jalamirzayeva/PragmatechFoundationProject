@@ -1,1 +1,68 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+#about-head {
+  font-family: 'Raleway', sans-serif;
+  height: 200px;
+  width: 100%;
+  border: 1px solid white;
+  background: black;
+}
+
+#about-head .about-text {
+  margin: auto;
+  margin-top: 80px;
+  color: #f27c66;
+  padding: 15px 0px;
+  border-radius: 8px 0px;
+  width: 15%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+}
+
+#about-page {
+  width: 100%;
+}
+
+#about-page .about-page-container {
+  margin: auto;
+  width: 70%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+#about-page .about-page-container .accordion {
+  width: 50%;
+  font-family: 'Raleway', sans-serif;
+  color: #454545;
+}
+
+#about-page .about-page-container .accordion h1 {
+  margin: 15px 0px;
+  font-size: 35px;
+  color: #454545;
+  font-weight: 500;
+}
+
+#about-page .about-page-container .accordion .bs-example {
+  margin: 5px;
+}
+
+#about-page .about-page-container .accordion .accordion .fa {
+  margin-right: 0.5rem;
+}
+
+#about-page .about-page-container .img {
+  width: 47%;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+
+#about-page .about-page-container .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=about.css.map */

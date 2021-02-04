@@ -1,0 +1,231 @@
+@import '../color.scss';
+#courses-head{
+    font-family: 'Raleway', sans-serif;
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    background: black;
+    
+
+    
+    .courses-text{
+        margin: auto;
+        margin-top: 80px;
+        color: $main-color-pink;
+        padding: 15px 0px;
+        border-radius: 8px 0px;
+        width: 15%;
+        text-align: center;
+        background:rgba(255,255,255,.9);
+        font-size: 25px;
+   
+
+    }
+}
+#courses-page{
+    .courses-page-container{
+        margin: auto;
+        height: 120vh;
+        width: 60%;
+        margin-top: 50px 0px;
+// 1ci sira
+        .courses-row{
+            margin: 30px 0px;
+            display: flex;
+                   .col-4{
+            // border: 1px solid lightgray;
+            border-radius: 10px;
+            height: 450px;
+            width: 300px;
+            margin-left: 35px;
+            padding: 0px 0px;
+            overflow: hidden;
+            font-family:'Raleway', sans-serif ;
+            color: white;
+            .img{
+            overflow: hidden;
+            img{
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            transition: all .9s ease;
+            &:hover{
+                transform: scale(1.1);
+                overflow: hidden;
+            }
+            }
+            .learn-more-1{
+                border: 1px solid rgb(247, 246, 246);
+                color: rgb(255, 255, 255);
+                background-color: rgba(161, 158, 158, 0.7);
+                border-radius: 7px 0px;
+                padding: 10px;
+                position: absolute;
+                z-index: 2;
+                top: 30%;
+                left: 36%;
+                transition: all .4s ease;
+                &:hover{
+                    cursor: pointer;
+                    background: $main-color-pink-dark;
+                    
+                }
+            }
+            .learn-more-2{
+                border: 1px solid rgb(247, 246, 246);
+                color: rgb(255, 255, 255);
+                background-color: rgba(161, 158, 158, 0.7);
+                border-radius: 7px 0px;
+                padding: 10px;
+                position: absolute;
+                z-index: 2;
+                top: 30%;
+                left: 36%;
+                transition: all .4s ease;
+                &:hover{
+                    cursor: pointer;
+                    background: $main-color-yellow-dark;
+                    
+                }
+            }
+            .learn-more-3{
+                border: 1px solid rgb(247, 246, 246);
+                color: rgb(255, 255, 255);
+                background-color: rgba(161, 158, 158, 0.7);
+                border-radius: 7px 0px;
+                padding: 10px;
+                position: absolute;
+                z-index: 2;
+                top: 30%;
+                left: 36%;
+                transition: all .4s ease;
+                &:hover{
+                    cursor: pointer;
+                    background: $main-color-green-dark;
+                    
+                }
+            }
+            }
+            .course-name{
+                background:#333333;
+                padding: 15px;
+                margin: -2px 0px;
+            }
+            .course-info-1{
+                padding: 17px;
+                background: $main-color-pink-dark;
+            }
+            .course-info-2{
+                padding: 17px;
+                background: $main-color-yellow-dark;
+            }
+            .course-info-3{
+                padding: 17px;
+                background: $main-color-green-dark;
+            }
+        }
+        }
+
+// 2ci sira
+.courses-row{
+    margin: 30px 0px;
+    display: flex;
+    .col-4{
+// border: 1px solid lightgray;
+border-radius: 10px;
+height: 450px;
+width: 300px;
+margin-left: 35px;
+padding: 0px 0px;
+overflow: hidden;
+font-family:'Raleway', sans-serif ;
+color: white;
+.img{
+overflow: hidden;
+img{
+height: 280px;
+width: 100%;
+object-fit: cover;
+position: relative;
+transition: all .9s ease;
+&:hover{
+ transform: scale(1.1);
+ overflow: hidden;
+}
+}
+.learn-more-4{
+ border: 1px solid rgb(247, 246, 246);
+ color: rgb(255, 255, 255);
+ background-color: rgba(161, 158, 158, 0.7);
+ border-radius: 7px 0px;
+ padding: 10px;
+ position: absolute;
+ z-index: 2;
+ top: 30%;
+ left: 36%;
+ transition: all .4s ease;
+ &:hover{
+     cursor: pointer;
+     background: $main-color-lightgray;
+     
+ }
+}
+.learn-more-5{
+ border: 1px solid rgb(247, 246, 246);
+ color: rgb(255, 255, 255);
+ background-color: rgba(161, 158, 158, 0.7);
+ border-radius: 7px 0px;
+ padding: 10px;
+ position: absolute;
+ z-index: 2;
+ top: 30%;
+ left: 36%;
+ transition: all .4s ease;
+ &:hover{
+     cursor: pointer;
+     background: $main-color-blue;
+     
+ }
+}
+.learn-more-6{
+ border: 1px solid rgb(247, 246, 246);
+ color: rgb(255, 255, 255);
+ background-color: rgba(161, 158, 158, 0.7);
+ border-radius: 7px 0px;
+ padding: 10px;
+ position: absolute;
+ z-index: 2;
+ top: 30%;
+ left: 36%;
+ transition: all .4s ease;
+ &:hover{
+     cursor: pointer;
+     background: $main-color-gray;
+     
+ }
+}
+}
+.course-name{
+ background:$main-color-gray-dark;
+ padding: 15px;
+ margin: -2px 0px;
+}
+.course-info-4{
+ padding: 17px;
+ background: $main-color-lightgray;
+}
+.course-info-5{
+ padding: 17px;
+ background: $main-color-blue;
+}
+.course-info-6{
+ padding: 17px;
+ background: $main-color-gray;
+}
+}
+}
+    }
+}
+
+

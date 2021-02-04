@@ -1,0 +1,67 @@
+@import '../color.scss';
+
+
+#about-head{
+    font-family: 'Raleway', sans-serif;
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    background: black;
+    
+
+    
+    .about-text{
+        margin: auto;
+        margin-top: 80px;
+        color: $main-color-pink;
+        padding: 15px 0px;
+        border-radius: 8px 0px;
+        width: 15%;
+        text-align: center;
+        background:rgba(255,255,255,.9);
+        font-size: 25px;
+    }
+}
+#about-page{
+    width: 100%;
+    .about-page-container{
+        margin: auto;
+        width: 70%;
+        height: 50vh;
+        display: flex;
+        margin-top: 50px;
+        .accordion{
+
+            width: 50%;
+            font-family: 'Raleway', sans-serif;
+            color: $main-color-gray-dark;
+            h1{
+            margin: 15px 0px;
+            font-size: 35px;
+            color: $main-color-gray-dark;
+            font-weight: 500;
+            }
+            .bs-example{
+                margin: 5px;
+            }
+            .accordion .fa{
+            margin-right: 0.5rem;
+            }
+        }
+        .img{
+            width: 47%;
+            height: 40vh;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-left: 30px;
+            img{
+            object-fit: cover;
+            
+        }
+        }
+        
+    }
+}
+
+
+

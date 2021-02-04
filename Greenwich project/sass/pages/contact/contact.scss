@@ -1,0 +1,110 @@
+@import '../color.scss';
+#contact-head{
+    font-family: 'Raleway', sans-serif;
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    background: black;
+    
+
+    
+    .contact-text{
+        margin: auto;
+        margin-top: 80px;
+        color: $main-color-pink;
+        padding: 15px 0px;
+        border-radius: 8px 0px;
+        width: 15%;
+        text-align: center;
+        background:rgba(255,255,255,.9);
+        font-size: 25px; 
+    }
+}
+#contact-page{
+    
+    .contact-page-container{
+        display: flex;
+        margin: auto;
+        width: 70%;
+        margin-top: 50px;
+        font-family: 'Raleway', sans-serif;
+        
+        .contact-us{
+            margin-right: 10px;
+            width: 60%;
+            h1{
+            margin: 15px 0px;
+            font-size: 35px;
+            color: $main-color-gray-dark;
+            font-weight: 500;
+            }
+            .body{
+                * {
+                    font-family: 'Raleway', sans-serif;
+                    box-sizing: border-box;
+                }
+                
+                input[type=text], select, textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    // border-radius: 5px 0px;
+                    resize: vertical;
+                }
+                .col-75 {
+                    float: left;
+                    width: 95%;
+                    margin-top: 6px;
+                    margin-left: 10px;
+                    
+                }
+
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                
+                .button{
+                  .send-btn{
+                    float: right;
+                    margin-right: 20px;
+                    font-size: 15px;
+                    border: 1px solid $main-color-pink;
+                    border-radius: 10px 0px ;
+                    color: $main-color-gray;
+                    background: white;
+                    padding: 10px 55px;
+                    
+                    &:hover{
+                        background: $main-color-pink;
+                        color: white;
+                        transition: all .5s ease;
+                    }
+                    
+                }  
+                }
+            }
+        }
+        .course-info{
+            width: 40%;
+            h1{
+                margin: 15px 0px;
+                font-size: 35px;
+                color: $main-color-gray-dark;
+                font-weight: 500;
+            }
+            p{
+                color: $main-color-gray;
+                margin: 5px 0px;
+               
+            }
+            h3{
+                color: $main-color-gray-dark;
+                font-size: 20px;
+                margin: 20px 0px;
+                font-weight: 500;
+            }
+        }
+    }
+}

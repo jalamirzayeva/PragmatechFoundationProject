@@ -404,198 +404,6 @@ body {
   transition: all .3s ease;
 }
 
-#how-we-work {
-  margin: -100px 0px;
-}
-
-#how-we-work h1 {
-  text-align: center;
-  padding: 30px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 1.5em;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-}
-
-#how-we-work h1:hover {
-  color: #18BB7C;
-  cursor: pointer;
-}
-
-#how-we-work .time-line {
-  font-family: 'Raleway', sans-serif;
-  margin: auto;
-  width: 70%;
-  border: 1px solid #8a8787;
-}
-
-#how-we-work .time-line .line-element {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#how-we-work .time-line .line-element .action .action-box-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #d36c59;
-  position: relative;
-}
-
-#how-we-work .time-line .line-element .action .action-box-1 span {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 190px;
-  width: 90px;
-  overflow: hidden;
-}
-
-#how-we-work .time-line .line-element .action .action-box-1 span i {
-  color: rgba(211, 108, 89, 0.2);
-  font-size: 6.9em;
-}
-
-#how-we-work .time-line .line-element .action .action-box-1 .text {
-  background: #f27c66;
-  padding: 15px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 190px;
-  width: 270px;
-}
-
-#how-we-work .time-line .line-element .action .action-box-1 .text h1 {
-  color: white;
-  font-weight: 100;
-  text-align: start;
-  padding: 0px;
-  margin-bottom: 15px;
-}
-
-#how-we-work .time-line .line-element .action .action-box-1 .text p {
-  color: white;
-}
-
-#how-we-work .time-line .line-element .action .action-box-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #F9CB8F;
-  position: relative;
-}
-
-#how-we-work .time-line .line-element .action .action-box-2 span {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 190px;
-  width: 90px;
-  overflow: hidden;
-}
-
-#how-we-work .time-line .line-element .action .action-box-2 span i {
-  color: rgba(228, 186, 131, 0.4);
-  font-size: 6.9em;
-}
-
-#how-we-work .time-line .line-element .action .action-box-2 .text {
-  background: #F9CB8F;
-  padding: 15px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 190px;
-  width: 270px;
-}
-
-#how-we-work .time-line .line-element .action .action-box-2 .text h1 {
-  color: white;
-  font-weight: 100;
-  text-align: start;
-  padding: 0px;
-  margin-bottom: 15px;
-}
-
-#how-we-work .time-line .line-element .action .action-box-2 .text p {
-  color: white;
-}
-
-#how-we-work .time-line .line-element .action .action-box-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #18BB7C;
-  position: relative;
-}
-
-#how-we-work .time-line .line-element .action .action-box-3 span {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 190px;
-  width: 90px;
-  overflow: hidden;
-}
-
-#how-we-work .time-line .line-element .action .action-box-3 span i {
-  color: rgba(19, 160, 105, 0.2);
-  font-size: 6.9em;
-}
-
-#how-we-work .time-line .line-element .action .action-box-3 .text {
-  background: #18BB7C;
-  padding: 15px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 190px;
-  width: 270px;
-}
-
-#how-we-work .time-line .line-element .action .action-box-3 .text h1 {
-  color: white;
-  font-weight: 100;
-  text-align: start;
-  padding: 0px;
-  margin-bottom: 15px;
-}
-
-#how-we-work .time-line .line-element .action .action-box-3 .text p {
-  color: white;
-}
-
-#how-we-work .three-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-  height: 4px;
-}
-
-#how-we-work .three-bottom .first {
-  color: #d36c59;
-  background: #d36c59;
-  width: 30px;
-}
-
-#how-we-work .three-bottom .second {
-  color: #e4ba83;
-  background: #e4ba83;
-  width: 30px;
-}
-
-#how-we-work .three-bottom .third {
-  color: #13a069;
-  background: #13a069;
-  width: 30px;
-}
-
 #teachers {
   width: 100%;
   height: 50vh;
@@ -829,6 +637,16 @@ body {
   margin: 80px 80px;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
+}
+
+#video-inform .video-inform-container .inform .watch-more a {
+  color: white;
+  text-decoration: none;
+}
+
+#video-inform .video-inform-container .inform .watch-more a:hover {
+  color: #18BB7C;
 }
 
 #video-inform .video-inform-container .inform .watch-more:hover {

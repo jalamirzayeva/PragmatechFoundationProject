@@ -359,175 +359,175 @@ body{
     
 }
 // HOW WE WORK (TIMELINE)
-#how-we-work{
-    margin: -100px 0px;
+// #how-we-work{
+//     margin: -100px 0px;
    
-    h1{
-        text-align: center;
-        padding: 30px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-size: 1.5em;
-        transition: all .6s ease;
-        &:hover{
-            color: $main-color-green;
-            cursor: pointer;
-        }
-    }
-    .time-line{
-        font-family:'Raleway', sans-serif ;
-        margin: auto;
-        width: 70%;
-        border: 1px solid rgb(138, 135, 135);
+//     h1{
+//         text-align: center;
+//         padding: 30px;
+//         font-family: 'Raleway', sans-serif;
+//         font-weight: 500;
+//         font-size: 1.5em;
+//         transition: all .6s ease;
+//         &:hover{
+//             color: $main-color-green;
+//             cursor: pointer;
+//         }
+//     }
+//     .time-line{
+//         font-family:'Raleway', sans-serif ;
+//         margin: auto;
+//         width: 70%;
+//         border: 1px solid rgb(138, 135, 135);
     
-        .line-element{
-            box-sizing: border-box;
-            .action{
-                .action-box-1{
-                    display: flex;
-                    box-sizing: border-box;
-                    border: 1px solid $main-color-pink-dark;
-                    position: relative;
-                    span{
-                        box-sizing: border-box;
-                        height:190px;
-                        width:90px;
-                        overflow: hidden;
-                        i{
-                            color: rgba(211,108,89,.2);
-                            font-size: 6.9em;
+//         .line-element{
+//             box-sizing: border-box;
+//             .action{
+//                 .action-box-1{
+//                     display: flex;
+//                     box-sizing: border-box;
+//                     border: 1px solid $main-color-pink-dark;
+//                     position: relative;
+//                     span{
+//                         box-sizing: border-box;
+//                         height:190px;
+//                         width:90px;
+//                         overflow: hidden;
+//                         i{
+//                             color: rgba(211,108,89,.2);
+//                             font-size: 6.9em;
                             
 
                             
-                        }
-                    }
-                    .text{
-                        background: $main-color-pink;
-                        padding: 15px 30px;
-                        box-sizing: border-box;
-                        height: 190px;
-                        width: 270px;
+//                         }
+//                     }
+//                     .text{
+//                         background: $main-color-pink;
+//                         padding: 15px 30px;
+//                         box-sizing: border-box;
+//                         height: 190px;
+//                         width: 270px;
                         
                         
-                        h1{
-                            color:white;
-                            font-weight: 100;
-                            text-align: start;
-                            padding: 0px;
-                            margin-bottom: 15px;
+//                         h1{
+//                             color:white;
+//                             font-weight: 100;
+//                             text-align: start;
+//                             padding: 0px;
+//                             margin-bottom: 15px;
                            
-                        }
-                        p{
-                            color:white;
-                        }
-                    }
+//                         }
+//                         p{
+//                             color:white;
+//                         }
+//                     }
 
-                }
-                .action-box-2{
-                    display: flex;
-                    box-sizing: border-box;
-                    border: 1px solid $main-color-yellow;
-                    position: relative;
-                    span{
-                        box-sizing: border-box;
-                        height:190px;
-                        width:90px;
-                        overflow: hidden;
-                        i{
-                            color: rgba(228,186,131,.4);
-                            font-size: 6.9em;
+//                 }
+//                 .action-box-2{
+//                     display: flex;
+//                     box-sizing: border-box;
+//                     border: 1px solid $main-color-yellow;
+//                     position: relative;
+//                     span{
+//                         box-sizing: border-box;
+//                         height:190px;
+//                         width:90px;
+//                         overflow: hidden;
+//                         i{
+//                             color: rgba(228,186,131,.4);
+//                             font-size: 6.9em;
                             
 
                             
-                        }
-                    }
-                    .text{
-                        background: $main-color-yellow;
-                        padding: 15px 30px;
-                        box-sizing: border-box;
-                        height: 190px;
-                        width: 270px;
+//                         }
+//                     }
+//                     .text{
+//                         background: $main-color-yellow;
+//                         padding: 15px 30px;
+//                         box-sizing: border-box;
+//                         height: 190px;
+//                         width: 270px;
                         
                         
-                        h1{
-                            color:white;
-                            font-weight: 100;
-                            text-align: start;
-                            padding: 0px;
-                            margin-bottom: 15px;
+//                         h1{
+//                             color:white;
+//                             font-weight: 100;
+//                             text-align: start;
+//                             padding: 0px;
+//                             margin-bottom: 15px;
                            
-                        }
-                        p{
-                            color:white;
-                        }
-                    }
-                }
-                .action-box-3{
-                    display: flex;
-                    box-sizing: border-box;
-                    border: 1px solid $main-color-green;
-                    position: relative;
-                    span{
-                        box-sizing: border-box;
-                        height:190px;
-                        width:90px;
-                        overflow: hidden;
-                        i{
-                            color: rgba(19,160,105,.2);
-                            font-size: 6.9em;
+//                         }
+//                         p{
+//                             color:white;
+//                         }
+//                     }
+//                 }
+//                 .action-box-3{
+//                     display: flex;
+//                     box-sizing: border-box;
+//                     border: 1px solid $main-color-green;
+//                     position: relative;
+//                     span{
+//                         box-sizing: border-box;
+//                         height:190px;
+//                         width:90px;
+//                         overflow: hidden;
+//                         i{
+//                             color: rgba(19,160,105,.2);
+//                             font-size: 6.9em;
                             
                             
-                        }
-                    }
-                    .text{
-                        background: $main-color-green;
-                        padding: 15px 30px;
-                        box-sizing: border-box;
-                        height: 190px;
-                        width: 270px;
+//                         }
+//                     }
+//                     .text{
+//                         background: $main-color-green;
+//                         padding: 15px 30px;
+//                         box-sizing: border-box;
+//                         height: 190px;
+//                         width: 270px;
                         
                         
-                        h1{
-                            color:white;
-                            font-weight: 100;
-                            text-align: start;
-                            padding: 0px;
-                            margin-bottom: 15px;
-                        }
-                        p{
-                            color:white;
-                        }
-                    }
+//                         h1{
+//                             color:white;
+//                             font-weight: 100;
+//                             text-align: start;
+//                             padding: 0px;
+//                             margin-bottom: 15px;
+//                         }
+//                         p{
+//                             color:white;
+//                         }
+//                     }
 
-                }
-            }
+//                 }
+//             }
 
-            // .step{}
+//             // .step{}
 
-        }
-    }
-    .three-bottom{
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        height: 4px;
-        .first{
-            color: $main-color-pink-dark;
-            background: $main-color-pink-dark;
-            width: 30px;
-        }
-        .second{
-            color: $main-color-yellow-dark;
-            background: $main-color-yellow-dark;
-            width: 30px;
-        }
-        .third{
-            color: $main-color-green-dark;
-            background: $main-color-green-dark;
-            width: 30px;
-        }
-    }
-}
+//         }
+//     }
+//     .three-bottom{
+//         display: flex;
+//         justify-content: center;
+//         overflow: hidden;
+//         height: 4px;
+//         .first{
+//             color: $main-color-pink-dark;
+//             background: $main-color-pink-dark;
+//             width: 30px;
+//         }
+//         .second{
+//             color: $main-color-yellow-dark;
+//             background: $main-color-yellow-dark;
+//             width: 30px;
+//         }
+//         .third{
+//             color: $main-color-green-dark;
+//             background: $main-color-green-dark;
+//             width: 30px;
+//         }
+//     }
+// }
 // OUR TEACHERS
 #teachers{
     width: 100%;
@@ -731,7 +731,7 @@ body{
                 padding: 75px;
                 margin: -120px 0px;
             }
-            .watch-more{
+            .watch-more {
                 border: 1px solid $main-color-green;
                 background: $main-color-green;
                 color: white;
@@ -741,6 +741,14 @@ body{
                 margin: 80px 80px;
                 cursor: pointer;
                 outline: none;
+                text-decoration: none;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        &:hover{
+                            color: $main-color-green;
+                        }
+                    }
                 &:hover{
                     color: $main-color-green;
                     background: white;

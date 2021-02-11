@@ -819,7 +819,7 @@ body {
   margin: -120px 0px;
 }
 
-#video-inform .video-inform-container .inform .watch-more {
+#video-inform .video-inform-container .inform .watch-more a {
   border: 1px solid #18BB7C;
   background: #18BB7C;
   color: white;
@@ -829,9 +829,10 @@ body {
   margin: 80px 80px;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
 }
 
-#video-inform .video-inform-container .inform .watch-more:hover {
+#video-inform .video-inform-container .inform .watch-more a:hover {
   color: #18BB7C;
   background: white;
   -webkit-transition: all .3s ease;

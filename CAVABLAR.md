@@ -1,4 +1,4 @@
-## Suallar:
+# Suallar:
 - index->value ile key->value yanasmalari arasindaki ferqler
 
 - listin built-in metodlari nelerdir
@@ -16,7 +16,7 @@
 - parametr ve argument arasinda ferqler nelerdir
 
 
-## Cavablar:
+# Cavablar:
 - Arraylerin elementlərini görmək üçün index,obyektin elementlərini görmək üçün key value istifadə olunur.
 ***
 - Yeni bir element elave edir - append()

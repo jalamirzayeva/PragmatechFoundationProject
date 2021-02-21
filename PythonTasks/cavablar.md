@@ -1,13 +1,13 @@
 ## Python interpreted bir dildir. İnterpreted dilin iş prinsipini izah edin
-### Interpreter dillər kodları sətir-sətir tərcümə edir.Yəni,hər bir kod sətri ardıcıllıqla yoxlanılır, tərcümə olunur və əgər kodun bir sətrində səhv aşkar olunarsa, digər sətrə keçmədən prosesi dayandırır.Python,JavaScript,Ruby bu dillərə misaldır.Həmçinin heç bir əlavə obyekt kod yaratmır və yaddaşı daha səmərəli istifadə edir.
+ Interpreter dillər kodları sətir-sətir tərcümə edir.Yəni,hər bir kod sətri ardıcıllıqla yoxlanılır, tərcümə olunur və əgər kodun bir sətrində səhv aşkar olunarsa, digər sətrə keçmədən prosesi dayandırır.Python,JavaScript,Ruby bu dillərə misaldır.Həmçinin heç bir əlavə obyekt kod yaratmır və yaddaşı daha səmərəli istifadə edir.
 ***
 ## Interpreted və compiler dillər arasında olan fərqləri izah edin
-### | Interpreter |
+#### | Interpreter |
 - Proqramı sətir-sətir yoxlayır
 - Obyekt kodu yaratmır,yaddaşı daha səmərəli istifadə 
 - Kodun təhlili üçün az vaxt gedir
 - İcra prosesi uzundur
-### | Compiler |
+#### | Compiler |
 - Proqramı bütünlüklə tərcümə edir
 - Obyekt kodu yaratdığı üçün daha çox yer istifadə olunur
 - Kodun təhlili üçün çox vaxt gedir

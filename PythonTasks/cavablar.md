@@ -1,0 +1,17 @@
+- Python interpreted bir dildir. İnterpreted dilin iş prinsipini izah edin
+Interpreter dillər kodları sətir-sətir tərcümə edir.Yəni,hər bir kod sətri ardıcıllıqla yoxlanılır, tərcümə olunur və əgər kodun bir sətrində səhv aşkar olunarsa, digər sətrə keçmədən prosesi dayandırır.Python,JavaScript,Ruby bu dillərə misaldır.
+- Interpreted və compiler dillər arasında olan fərqləri izah edin
+- Python data tipləri hansılardır? Hər biri haqqında qısa izahat verin
+- Object Oriented Programming nədir? Niyə belə bir paradigmanın var olduğunu izah edin
+- Proqram yazarkən metodlardan istifadə edirik. Hansı hallarda metod istifadə edilməlidir?
+- local və global variable nədir izah edin
+- Python type conversion haqqında izahat verin
+- init nədir?
+- self nədir?
+- *args,*kwargs nədir? nə zaman istifadə olunur?
+- Python module nədir?
+- Python package nədir?
+- pass nədir? Nə zaman istifadə olunur?
+- List metodlarından 5 ədəd metodun izahatını yazın
+- List və dict hansı hallarda istifadə olunur?
+- Dict metodlarından 5 ədəd metodun izahatını yazın

@@ -2,12 +2,12 @@
  Interpreter dillər kodları sətir-sətir tərcümə edir.Yəni,hər bir kod sətri ardıcıllıqla yoxlanılır, tərcümə olunur və əgər kodun bir sətrində səhv aşkar olunarsa, digər sətrə keçmədən prosesi dayandırır.Python,JavaScript,Ruby bu dillərə misaldır.Həmçinin heç bir əlavə obyekt kod yaratmır və yaddaşı daha səmərəli istifadə edir.
 ***
 ## Interpreted və compiler dillər arasında olan fərqləri izah edin
-#### | Interpreter |
+##### | Interpreter |
 - Proqramı sətir-sətir yoxlayır
 - Obyekt kodu yaratmır,yaddaşı daha səmərəli istifadə 
 - Kodun təhlili üçün az vaxt gedir
 - İcra prosesi uzundur
-#### | Compiler |
+##### | Compiler |
 - Proqramı bütünlüklə tərcümə edir
 - Obyekt kodu yaratdığı üçün daha çox yer istifadə olunur
 - Kodun təhlili üçün çox vaxt gedir
@@ -22,13 +22,14 @@
 * Boolean növü - BOOL | yalnız 2 dəyər ala bilir : True/False |
 * DİCT | Məlumatları yerləşdirmək üçün istifadə olunur ama diərlərindən fərqli cəhəti odurki bu zaman key"lerden istifade edirik. |
 ***
-## Object Oriented Programming nədir? Niyə belə bir paradigmanın var olduğunu izah edin
 
-***
 ## Proqram yazarkən metodlardan istifadə edirik. Hansı hallarda metod istifadə edilməlidir?
+Normalda metodlar olmasaydı,biz bir məsələni alqoritmlər quraraq uzun uzun kod sətirləri yazırıq.Python,nəinki python bütün dillərdə metodlar var və
+dilləri yaradan proqramçılar uzun uzun kod sətirləri yazılmasın deyə eyni prosesi yerinə yetirən metodları yaradıblar. 
 ***
 ## local və global variable nədir izah edin
-
+* Local deyisken - funksiya daxilinde teyin etdiyimiz deyiskenlere deyilir,bu deyiskenlere teyin olunan funksiya xaricinde istifade etmek mumkun olmur.
+* Global deyisken - funksiya xaricinde teyin edilen deyiskenlere deyilir ve bu deyiskenlere istediyimiz yerde cagira bilirik
 ***
 ## Python type conversion haqqında izahat verin
 Bir məlumat növünün digər məlumat növünə çevrilməsinə **Type Conversion** deyilir. 
@@ -43,7 +44,7 @@ Explicit t.c - məsələn **int -> str** çevrilmə explicit type conversion hes
 Biz **init()** funksiyasından istifadə edərək obyekt xüsusiyyətlərinə dəyərlər təyin edə bilərik.İnit() ilə contact qurmaq üçünsə self parametrini əlavə edirik.
 ***
 ## self nədir?
-
+**Self** -Pythonda class'i təmsil edən metodların ilk parametridir, buna gore class daxilindeki metodlari cagirmaq ucun self parametrinden istifade etmeliyik.
 ***
 ## *args,*kwargs nədir? nə zaman istifadə olunur?
 Funksiyaya müəyyen sayda arqument əlavə etmək lazımdırsa istifadə edilir.

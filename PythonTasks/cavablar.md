@@ -36,8 +36,8 @@ Bir məlumat növünün digər məlumat növünə çevrilməsinə **Type Convers
 ### 2 növü var :
 - Implicit Type Conversion 
 - Explicit Type Conversion
-Implicit t.c - məsələn **int -> float** çevrilmə implicit type conversion hesab olunur.
-Explicit t.c - məsələn **int -> str** çevrilmə explicit type conversion hesab olunur. 
+* Implicit t.c - məsələn **int -> float** çevrilmə implicit type conversion hesab olunur.
+* Explicit t.c - məsələn **int -> str** çevrilmə explicit type conversion hesab olunur. 
 
 ***
 ## init nədir?

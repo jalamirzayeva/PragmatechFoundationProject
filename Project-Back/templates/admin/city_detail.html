@@ -1,0 +1,18 @@
+{% extends 'admin/layout.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+      <div class="col-12">
+          <h1 class="my-4">All Deatils in Here</h1>
+          <div class="card" >
+              <img class="card-img-top"style="width: 25rem; height:auto" src="/static/uploads/{{citiesdetail.img}}" alt="">
+              <div class="card-body">
+          </div>
+          <ul class="list-group">
+              <li class="list-group-item">Id:{{citiesdetail.id}}</li>
+              <li class="list-group-item">Title:{{citiesdetail.title}}</li>
+              <li class="list-group-item">Description:{{citiesdetail.desc}}</li>
+          </ul>
+  </div>
+{% endblock %}

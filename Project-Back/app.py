@@ -1,38 +1,16 @@
 from flask import Flask,render_template,request,redirect,url_for,flash
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate,MigrateCommand
+from flask_script import Manager
 from werkzeug.utils import secure_filename
-from flask_migrate import Migrate
 import os
 
 app = Flask(__name__)
-db=SQLAlchemy(app)
-migrate=Migrate(app,db)
+app.config['SECRET_KEY'] = 'mysecretkey'
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
 app.config['UPLOAD_PATH']='static/uploads'
-
-# All App Routes
-@app.route('/')
-def index():
-    slider=Slider.query.all()
-    return render_template("app/index.html",slider=slider)
-
-@app.route('/about')
-def about():
-    teachers=Teachers.query.all()
-    return render_template("app/about.html",teachers=teachers)
-
-@app.route('/courses')
-def courses():
-    courses=Courses.query.all()
-    return render_template("app/courses.html")
-
-@app.route('/education-abroad')
-def education_abroad():
-    return render_template("app/education-abroad.html")
-
-@app.route('/contact')
-def contact():
-    return render_template("app/contact.html")
+db = SQLAlchemy(app) 
+migrate=Migrate(app,db, render_as_batch=True)
 
 # All models
 
@@ -63,6 +41,30 @@ class Cities(db.Model):
     title=db.Column(db.String(100))
     desc=db.Column(db.Text)
 
+
+# All App Routes
+@app.route('/')
+def index():
+    slider=Slider.query.all()
+    return render_template("app/index.html",slider=slider)
+
+@app.route('/about')
+def about():
+    teachers=Teachers.query.all()
+    return render_template("app/about.html",teachers=teachers)
+
+@app.route('/courses')
+def courses():
+    courses=Courses.query.all()
+    return render_template("app/courses.html")
+
+@app.route('/education-abroad')
+def education_abroad():
+    return render_template("app/education-abroad.html")
+
+@app.route('/contact')
+def contact():
+    return render_template("app/contact.html")
 
 # All Admin Routes
 
@@ -284,3 +286,4 @@ def citiesDetail(id):
 
 if (__name__)=='__main__':
     app.run(debug=True)
+    manager.run()

@@ -44,6 +44,8 @@ body{
                 font-family: 'Raleway', sans-serif;
                 font-weight: 300;
                 margin-bottom: 0px;
+                line-height: 1rem;
+                
                 
                 li{
                     list-style: none;
@@ -222,10 +224,10 @@ body{
         font-weight: 500;
         font-size: 1.5em;
         transition: all .6s ease;
-        &:hover{
-            color: $main-color-pink;
-            cursor: pointer;
-        }
+        // &:hover{
+        //     color: $main-color-pink;
+        //     cursor: pointer;
+        // }
         
     }
     .latest-courses-container{
@@ -238,8 +240,8 @@ body{
        padding-bottom: 40px;
 
         .col-4{
-            border-radius: 10px;
-            box-shadow: 20px solid  lightgray;
+            border-radius: 8px;
+            box-shadow: 20px solid lightgray;
             height: auto;
             width: 25%;
             margin-left: 35px;
@@ -399,10 +401,10 @@ body{
         font-weight: 500;
         font-size: 1.5em;
         transition: all .6s ease;
-        &:hover{
-            color: $main-color-green;
-            cursor: pointer;
-        }
+        // &:hover{
+        //     color: $main-color-green;
+        //     cursor: pointer;
+        // }
     }
     .teachers-container{
         margin: auto;
@@ -424,19 +426,19 @@ body{
             margin-right: 35px;
             border-radius: 5px;
             .img{
-                height: 230px;
-                width: 40%;
+                height: 200px;
+                width: 35%;
                 overflow: hidden;
                 img{
-                    height: 230px;
+                    height: 200px;
                     width: 100%;
                     object-fit: cover;
                 }
             }
             .info-1{
-                width: 80%;
+                width: 65%;
                 height:auto;
-                background: $main-color-pink;
+                background: $main-color-pink-dark;
                 transition: all .3s linear;
                 .info-line{
                     background: white;
@@ -452,10 +454,10 @@ body{
                 // }
                 h1{
                     font-family: 'Raleway', sans-serif;
-                    padding: 45px;
-                    &:hover{
-                        color: $main-color-gray;
-                    }
+                    padding: 40px;
+                    // &:hover{
+                    //     color: $main-color-gray;
+                    // }
                 }
                 h5{
                     font-family: 'Raleway', sans-serif;
@@ -474,27 +476,27 @@ body{
         .teacher{
             overflow: hidden;
             width: 40%;
-            height: 230px;
+            height: 200px;
             border-radius: 5px;
             display: flex;
             .img{
-                height: 230px;
-                width: 40%;
+                height: 200px;
+                width: 35%;
                 overflow: hidden;
                 img{
-                    height: 230px;
+                    height: 200px;
                     width: 100%;
                     object-fit: cover;
                 }
             }
             .info-2{
-                width: 80%;
-                height: 230px;
-                background: $main-color-gray;
+                width: 65%;
+                height: 200px;
+                background: $main-color-gray-dark;
                 transition: all .3s linear;.info-line{
                     background: white;
                     height: 1px;
-                    width: 80px;
+                    width: 85px;
                     margin: auto;
                     // &:hover{
                     //     background: $main-color-pink;
@@ -506,7 +508,7 @@ body{
                 // }
                 h1{
                     font-family: 'Raleway', sans-serif;
-                    padding: 45px;
+                    padding: 40px;
                     // &:hover{
                     //     color: $main-color-gray;
                     // }
@@ -532,23 +534,23 @@ body{
             justify-content: center;
             overflow: hidden;
             width: 40%;
-            height: 230px;
+            height: 200px;
             margin-right: 35px;
             border-radius: 5px;
             .img{
                 height: 230px;
-                width: 40%;
+                width: 35%;
                 overflow: hidden;
                 img{
-                    height: 230px;
+                    height: 200px;
                     width: 100%;
                     object-fit: cover;
                 }
             }
             .info-3{
-                width: 80%;
-                height: 230px;
-                background: $main-color-green;
+                width: 65%;
+                height: 200px;
+                background: $main-color-green-dark;
                 transition: all .3s linear;
                 .info-line{
                     background: white;
@@ -564,10 +566,10 @@ body{
                 // }
                 h1{
                     font-family: 'Raleway', sans-serif;
-                    padding: 45px;
-                    &:hover{
-                        color: $main-color-gray;
-                    }
+                    padding: 40px;
+                    // &:hover{
+                    //     color: $main-color-gray;
+                    // }
                 }
                 h5{
                     font-family: 'Raleway', sans-serif;
@@ -618,7 +620,7 @@ body{
         width: 70%;
         height: auto;
         display: flex;
-        padding: 40px;
+        // padding: 40px;
         font-family: 'Raleway', sans-serif;
         .video{
             width: 100%;

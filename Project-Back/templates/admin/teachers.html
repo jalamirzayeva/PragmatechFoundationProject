@@ -5,25 +5,25 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 class="my-3">Add New Teacher</h3>
+                <h3 class="my-3">Yeni Müəllim Əlavə et</h3>
                 <form action="/admin/teachers/" method="POST" enctype="multipart/form-data">
                     <div class="from-group my-2">
-                        <input type="text" class="form-control" name="name" placeholder="Name">
+                        <input type="text" class="form-control" name="name" placeholder="Ad Soyad">
                     </div>
                 <div class="from-group my-2">
-                    <input type="text" class="form-control" name="title" placeholder="Title">
+                    <input type="text" class="form-control" name="title" placeholder="Status">
                 </div>
                 <div class="from-group my-2">
-                    <input type="text" class="form-control" name="desc" placeholder="Description">
+                    <input type="text" class="form-control" name="desc" placeholder="Fənn">
                 </div>
                 <div class="from-group my-2">
-                    <input type="text" class="form-control" name="phone" placeholder="Phone">
+                    <input type="text" class="form-control" name="phone" placeholder="Telefon">
                 </div>
                 <div class="from-group my-2">
                     <input type="file" class="form-control" name="img" placeholder="Image">
                 </div>
                 <div class="from-group my-2">
-                    <input type="submit" class="btn btn-success" value="Add New Teacher">
+                    <input type="submit" class="btn btn-success" value="Əlavə et">
                 </div>
                 </form>
             </div>
@@ -35,16 +35,16 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 class="my-3">All Teachers</h3>
+                <h3 class="my-3">Bütün Müəllimlər</h3>
                 <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">Id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Desc</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col">Ad Soyad</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Fənn</th>
+                        <th scope="col">Telefon</th>
+                        <th scope="col">Edit</th>
                       </tr>
                     </thead>
                     <tbody>

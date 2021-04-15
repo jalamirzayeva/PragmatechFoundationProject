@@ -12,16 +12,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
+
     
         <title>Greenwich Academy - Bizimlə əlaqə</title>
     
     </head>
 <body>
+    <style>
+    body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2rem;
+    }
+    </style>
     <!-- header -->
     <section id="header-slider">
         <div class="header">
             <div class="logo">
-                <img src="../../static/app/img/logo.png" alt="">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
                 <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
             </div>
             <div class="navbar" >
@@ -38,42 +47,43 @@
         </div>
         
     </section>
-    <!-- Contact head -->
+    <!-- Contact header -->
     <section id="contact-head" style="background: url(../../static/app/img/contact-bg.jpg); ">
         <div class="contact-text">
             Bizimlə əlaqə
         </div>
     </section>
-    <!-- contact-page -->
+    <!-- contact-main -->
     <section id="contact-page">
         <div class="contact-page-container">
                 <div class="contact-us">
                     <h1> Bizimlə əlaqə saxlayın</h1>
                     <div class="body">
+                        <form action="{{url_for('contact')}}" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             
                             <div class="col-75" >
-                            <input type="text" id="fname" name="firstname" placeholder="Name" style="font-style: italic;">
+                            <input type="text" name="name" placeholder="Ad Soyad" style="font-style: normal;">
                             </div>
                         </div>
                         <div class="row">
                             
                             <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="E-mail" style="font-style: italic;">
+                            <input type="text"  name="email" placeholder="E-mail" style="font-style: normal;">
                             </div>
                         </div>
                         <div class="row">
-                            
                             <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder=" Message" style="font-style: italic;"  ></textarea>
+                        <textarea name="content" placeholder=" Mesajınız" style="font-style: normal;"  ></textarea>
                             </div>
+                            
                         </div>
                         <div class="button">
-                            <button class="send-btn">
-                                <p style="font-weight: 550;">Göndər</p>
-                            </button>
+                            <input type="submit" class="btn-success"  value="Göndər">
                         </div>
-                    </div>
+                        </form>
+                </div>
+                
                 </div>
                 <div class="course-info">
                     <h1>Ofisimiz</h1>
@@ -187,7 +197,7 @@
                             </div>
                             <div class="row-button">
                                 <button class="send">
-                                    Send 
+                                    Göndər 
                                 </button>
                             </div>
                         </div>

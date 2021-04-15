@@ -40,6 +40,13 @@ class Cities(db.Model):
     img=db.Column(db.String(100))
     title=db.Column(db.String(100))
     desc=db.Column(db.Text)
+    
+
+class Messages(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    name=db.Column(db.String(100))
+    email=db.Column(db.String(100))
+    content=db.Column(db.Text)
 
 
 # All App Routes
@@ -56,15 +63,30 @@ def about():
 @app.route('/courses')
 def courses():
     courses=Courses.query.all()
-    return render_template("app/courses.html")
+    return render_template("app/courses.html",courses=courses)
 
 @app.route('/education-abroad')
 def education_abroad():
-    return render_template("app/education-abroad.html")
+    cities=Cities.query.all()
+    return render_template("app/education-abroad.html",cities=cities)
 
-@app.route('/contact')
+
+
+
+@app.route('/contact',methods=['GET','POST'])
 def contact():
-    return render_template("app/contact.html")
+    messages=Messages()
+    if request.method=='POST':
+        messages=Messages(
+            name=request.form['name'],
+            email=request.form['email'],
+            content=request.form['content']
+        )
+        db.session.add(messages)
+        db.session.commit()
+        return redirect(url_for('messages'))
+    return render_template("app/contact.html",messages=messages)
+
 
 # All Admin Routes
 
@@ -145,6 +167,16 @@ def add_city():
         return redirect('/admin/cities/')
     return render_template("admin/cities.html",cities=cities)
 
+
+@app.route('/admin/messages/')
+def messages():
+    messages=Messages.query.all()
+    return render_template("admin/messages.html",messages=messages)
+
+
+
+
+
 #Delete
 
 @app.route('/admin/slider/delete/<id>')
@@ -175,6 +207,13 @@ def delete_city(id):
     db.session.delete(deleteCities)
     db.session.commit()
     return redirect("/admin/cities")
+
+@app.route('/admin/messages/delete/<id>')
+def delete_message(id):
+    deleteMessages=Messages.query.get(id)
+    db.session.delete(deleteMessages)
+    db.session.commit()
+    return redirect("/admin/messages")
 
 #Update
 @app.route('/admin/slider/update/<id>', methods=['GET','POST'])
@@ -282,8 +321,20 @@ def coursesDetail(id):
 @app.route('/admin/cities/detail/<id>')
 def citiesDetail(id):
     citiesdetail=Cities.query.get(id)
-    return render_template('admin/city _detail.html',citiesdetail=citiesdetail)
+    return render_template('admin/city_detail.html',citiesdetail=citiesdetail)
+
+
+@app.route('/admin/messages/detail/<id>')
+def messagesDetail(id):
+    messagesdetail=Messages.query.get(id)
+    return render_template('admin/message_detail.html',messagesdetail=messagesdetail)
+
+
 
 if (__name__)=='__main__':
     app.run(debug=True)
     manager.run()
+    
+    
+    
+    

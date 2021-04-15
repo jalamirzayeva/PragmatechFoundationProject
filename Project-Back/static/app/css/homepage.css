@@ -59,6 +59,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin-bottom: 0px;
+  line-height: 1rem;
 }
 
 #header-slider .navbar ul li {
@@ -248,11 +249,6 @@ body {
   transition: all .6s ease;
 }
 
-#latest-courses h1:hover {
-  color: #f27c66;
-  cursor: pointer;
-}
-
 #latest-courses .latest-courses-container {
   margin: auto;
   height: auto;
@@ -270,9 +266,9 @@ body {
 }
 
 #latest-courses .latest-courses-container .col-4 {
-  border-radius: 10px;
-  -webkit-box-shadow: 20px solid  lightgray;
-          box-shadow: 20px solid  lightgray;
+  border-radius: 8px;
+  -webkit-box-shadow: 20px solid lightgray;
+          box-shadow: 20px solid lightgray;
   height: auto;
   width: 25%;
   margin-left: 35px;
@@ -454,11 +450,6 @@ body {
   transition: all .6s ease;
 }
 
-#teachers h1:hover {
-  color: #18BB7C;
-  cursor: pointer;
-}
-
 #teachers .teachers-container {
   margin: auto;
   height: auto;
@@ -492,22 +483,22 @@ body {
 }
 
 #teachers .teachers-container .teacher .img {
-  height: 230px;
-  width: 40%;
+  height: 200px;
+  width: 35%;
   overflow: hidden;
 }
 
 #teachers .teachers-container .teacher .img img {
-  height: 230px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #teachers .teachers-container .teacher .info-1 {
-  width: 80%;
+  width: 65%;
   height: auto;
-  background: #f27c66;
+  background: #d36c59;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
@@ -521,11 +512,7 @@ body {
 
 #teachers .teachers-container .teacher .info-1 h1 {
   font-family: 'Raleway', sans-serif;
-  padding: 45px;
-}
-
-#teachers .teachers-container .teacher .info-1 h1:hover {
-  color: #5F5F5F;
+  padding: 40px;
 }
 
 #teachers .teachers-container .teacher .info-1 h5 {
@@ -543,7 +530,7 @@ body {
 #teachers .teachers-container .teacher {
   overflow: hidden;
   width: 40%;
-  height: 230px;
+  height: 200px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,22 +538,22 @@ body {
 }
 
 #teachers .teachers-container .teacher .img {
-  height: 230px;
-  width: 40%;
+  height: 200px;
+  width: 35%;
   overflow: hidden;
 }
 
 #teachers .teachers-container .teacher .img img {
-  height: 230px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #teachers .teachers-container .teacher .info-2 {
-  width: 80%;
-  height: 230px;
-  background: #5F5F5F;
+  width: 65%;
+  height: 200px;
+  background: #454545;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
@@ -574,13 +561,13 @@ body {
 #teachers .teachers-container .teacher .info-2 .info-line {
   background: white;
   height: 1px;
-  width: 80px;
+  width: 85px;
   margin: auto;
 }
 
 #teachers .teachers-container .teacher .info-2 h1 {
   font-family: 'Raleway', sans-serif;
-  padding: 45px;
+  padding: 40px;
 }
 
 #teachers .teachers-container .teacher .info-2 h5 {
@@ -604,28 +591,28 @@ body {
           justify-content: center;
   overflow: hidden;
   width: 40%;
-  height: 230px;
+  height: 200px;
   margin-right: 35px;
   border-radius: 5px;
 }
 
 #teachers .teachers-container .teacher .img {
   height: 230px;
-  width: 40%;
+  width: 35%;
   overflow: hidden;
 }
 
 #teachers .teachers-container .teacher .img img {
-  height: 230px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #teachers .teachers-container .teacher .info-3 {
-  width: 80%;
-  height: 230px;
-  background: #18BB7C;
+  width: 65%;
+  height: 200px;
+  background: #13a069;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
@@ -639,11 +626,7 @@ body {
 
 #teachers .teachers-container .teacher .info-3 h1 {
   font-family: 'Raleway', sans-serif;
-  padding: 45px;
-}
-
-#teachers .teachers-container .teacher .info-3 h1:hover {
-  color: #5F5F5F;
+  padding: 40px;
 }
 
 #teachers .teachers-container .teacher .info-3 h5 {
@@ -700,7 +683,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px;
   font-family: 'Raleway', sans-serif;
 }
 

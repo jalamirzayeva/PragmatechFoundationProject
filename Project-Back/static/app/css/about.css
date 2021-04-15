@@ -49,6 +49,7 @@
   display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  line-height: 1rem;
 }
 
 #header-slider .navbar ul li {
@@ -121,10 +122,12 @@
   display: -ms-flexbox;
   display: flex;
   padding: 100px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #about-page .about-page-container .accordion {
-  width: 50%;
+  width: 45%;
   font-family: 'Raleway', sans-serif;
   color: #454545;
 }
@@ -141,8 +144,18 @@
   background: #18BB7C;
 }
 
-#about-page .about-page-container .accordion .bs-example .accordion .card .card-header h2 .btn {
-  padding: 2px 15px;
+#about-page .about-page-container .accordion .bs-example .accordion .card {
+  border: solid 1px #e2e2e2;
+  border-radius: 0px;
+}
+
+#about-page .about-page-container .accordion .bs-example .accordion .card .card-header .mb-0 {
+  border-radius: 5px;
+}
+
+#about-page .about-page-container .accordion .bs-example .accordion .card .card-header .mb-0 .btn btn-link:hover {
+  border-color: white;
+  text-decoration: none;
 }
 
 #about-page .about-page-container .accordion .accordion .fa {
@@ -150,11 +163,21 @@
 }
 
 #about-page .about-page-container .img {
-  width: 47%;
+  width: 45%;
+}
+
+#about-page .about-page-container .img h1 {
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+  padding: 40px 0px;
+}
+
+#about-page .about-page-container .img img {
+  width: 100%;
   height: auto;
   overflow: hidden;
   border-radius: 5px;
-  margin-left: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }

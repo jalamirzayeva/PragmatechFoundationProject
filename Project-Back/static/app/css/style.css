@@ -59,6 +59,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin-bottom: 0px;
+  line-height: 1rem;
 }
 
 #header-slider .navbar ul li {
@@ -248,11 +249,6 @@ body {
   transition: all .6s ease;
 }
 
-#latest-courses h1:hover {
-  color: #f27c66;
-  cursor: pointer;
-}
-
 #latest-courses .latest-courses-container {
   margin: auto;
   height: auto;
@@ -270,9 +266,9 @@ body {
 }
 
 #latest-courses .latest-courses-container .col-4 {
-  border-radius: 10px;
-  -webkit-box-shadow: 20px solid  lightgray;
-          box-shadow: 20px solid  lightgray;
+  border-radius: 8px;
+  -webkit-box-shadow: 20px solid lightgray;
+          box-shadow: 20px solid lightgray;
   height: auto;
   width: 25%;
   margin-left: 35px;
@@ -454,11 +450,6 @@ body {
   transition: all .6s ease;
 }
 
-#teachers h1:hover {
-  color: #18BB7C;
-  cursor: pointer;
-}
-
 #teachers .teachers-container {
   margin: auto;
   height: auto;
@@ -492,22 +483,22 @@ body {
 }
 
 #teachers .teachers-container .teacher .img {
-  height: 230px;
-  width: 40%;
+  height: 200px;
+  width: 35%;
   overflow: hidden;
 }
 
 #teachers .teachers-container .teacher .img img {
-  height: 230px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #teachers .teachers-container .teacher .info-1 {
-  width: 80%;
+  width: 65%;
   height: auto;
-  background: #f27c66;
+  background: #d36c59;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
@@ -521,11 +512,7 @@ body {
 
 #teachers .teachers-container .teacher .info-1 h1 {
   font-family: 'Raleway', sans-serif;
-  padding: 45px;
-}
-
-#teachers .teachers-container .teacher .info-1 h1:hover {
-  color: #5F5F5F;
+  padding: 40px;
 }
 
 #teachers .teachers-container .teacher .info-1 h5 {
@@ -543,7 +530,7 @@ body {
 #teachers .teachers-container .teacher {
   overflow: hidden;
   width: 40%;
-  height: 230px;
+  height: 200px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,22 +538,22 @@ body {
 }
 
 #teachers .teachers-container .teacher .img {
-  height: 230px;
-  width: 40%;
+  height: 200px;
+  width: 35%;
   overflow: hidden;
 }
 
 #teachers .teachers-container .teacher .img img {
-  height: 230px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #teachers .teachers-container .teacher .info-2 {
-  width: 80%;
-  height: 230px;
-  background: #5F5F5F;
+  width: 65%;
+  height: 200px;
+  background: #454545;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
@@ -574,13 +561,13 @@ body {
 #teachers .teachers-container .teacher .info-2 .info-line {
   background: white;
   height: 1px;
-  width: 80px;
+  width: 85px;
   margin: auto;
 }
 
 #teachers .teachers-container .teacher .info-2 h1 {
   font-family: 'Raleway', sans-serif;
-  padding: 45px;
+  padding: 40px;
 }
 
 #teachers .teachers-container .teacher .info-2 h5 {
@@ -604,28 +591,28 @@ body {
           justify-content: center;
   overflow: hidden;
   width: 40%;
-  height: 230px;
+  height: 200px;
   margin-right: 35px;
   border-radius: 5px;
 }
 
 #teachers .teachers-container .teacher .img {
   height: 230px;
-  width: 40%;
+  width: 35%;
   overflow: hidden;
 }
 
 #teachers .teachers-container .teacher .img img {
-  height: 230px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #teachers .teachers-container .teacher .info-3 {
-  width: 80%;
-  height: 230px;
-  background: #18BB7C;
+  width: 65%;
+  height: 200px;
+  background: #13a069;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
@@ -639,11 +626,7 @@ body {
 
 #teachers .teachers-container .teacher .info-3 h1 {
   font-family: 'Raleway', sans-serif;
-  padding: 45px;
-}
-
-#teachers .teachers-container .teacher .info-3 h1:hover {
-  color: #5F5F5F;
+  padding: 40px;
 }
 
 #teachers .teachers-container .teacher .info-3 h5 {
@@ -700,7 +683,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -1134,6 +1116,8 @@ body {
   font-family: 'EB Garamond', serif;
   font-weight: 550;
   font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #header-slider .header .logo h3 a {
@@ -1148,6 +1132,9 @@ body {
   display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1rem;
 }
 
 #header-slider .navbar ul li {
@@ -1215,7 +1202,18 @@ body {
 #courses-page .courses-page-container {
   margin: auto;
   height: auto;
-  width: 60%;
+  width: 70%;
+}
+
+#courses-page .courses-page-container .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+#courses-page .courses-page-container .grid-container .card {
+  border: solid 1px black;
 }
 
 #courses-page .courses-page-container .courses-row {
@@ -1226,7 +1224,7 @@ body {
 }
 
 #courses-page .courses-page-container .courses-row .col-4 {
-  border-radius: 10px;
+  border-radius: 8px;
   height: auto;
   padding: 0px 0px;
   overflow: hidden;
@@ -1310,63 +1308,6 @@ body {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   overflow: hidden;
-}
-
-#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-4 {
-  border: 1px solid #f7f6f6;
-  color: white;
-  background-color: rgba(161, 158, 158, 0.7);
-  border-radius: 7px 0px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
-  top: 30%;
-  left: 36%;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-4:hover {
-  cursor: pointer;
-  background: #b0b0b0;
-}
-
-#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-5 {
-  border: 1px solid #f7f6f6;
-  color: white;
-  background-color: rgba(161, 158, 158, 0.7);
-  border-radius: 7px 0px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
-  top: 30%;
-  left: 36%;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-5:hover {
-  cursor: pointer;
-  background: #4bbcd7;
-}
-
-#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-6 {
-  border: 1px solid #f7f6f6;
-  color: white;
-  background-color: rgba(161, 158, 158, 0.7);
-  border-radius: 7px 0px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
-  top: 30%;
-  left: 36%;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-#courses-page .courses-page-container .courses-row .col-4 .img .learn-more-6:hover {
-  cursor: pointer;
-  background: #5F5F5F;
 }
 
 #courses-page .courses-page-container .courses-row .col-4 .course-name {
@@ -1766,6 +1707,8 @@ body {
   font-family: 'EB Garamond', serif;
   font-weight: 550;
   font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 #header-slider .header .logo h3 a {
@@ -2111,6 +2054,7 @@ body {
 #footer .footer-container .body .footer-courses-1 .course-info h2 {
   color: white;
   font-size: medium;
+  font-weight: 500;
 }
 
 #footer .footer-container .body .footer-courses-1 .course-info p {
@@ -2139,6 +2083,7 @@ body {
 #footer .footer-container .body .footer-courses-2 .course-info h2 {
   color: white;
   font-size: medium;
+  font-weight: 500;
 }
 
 #footer .footer-container .body .footer-courses-2 .course-info p {
@@ -2260,6 +2205,8 @@ body {
   font-family: 'EB Garamond', serif;
   font-weight: 550;
   font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #header-slider .header .logo h3 a {
@@ -2274,6 +2221,7 @@ body {
   display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  line-height: 1rem;
 }
 
 #header-slider .navbar ul li {
@@ -2339,7 +2287,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
   font-family: 'Raleway', sans-serif;
@@ -2347,11 +2295,11 @@ body {
 
 #contact-page .contact-page-container .contact-us {
   margin-right: 10px;
-  width: 60%;
+  width: 55%;
 }
 
 #contact-page .contact-page-container .contact-us h1 {
-  margin: 15px 0px;
+  margin: 20px 0px;
   font-size: 35px;
   color: #454545;
   font-weight: 500;
@@ -2366,16 +2314,17 @@ body {
 #contact-page .contact-page-container .contact-us .body input[type=text], #contact-page .contact-page-container .contact-us .body select, #contact-page .contact-page-container .contact-us .body textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #dadada;
+  border-radius: 1px 1px;
   resize: vertical;
-  outline: 1px solid rgba(19, 160, 105, 0.3);
+  outline: 3px solid rgba(14, 70, 48, 0.3);
 }
 
 #contact-page .contact-page-container .contact-us .body .col-75 {
   float: left;
   width: 95%;
-  margin-top: 6px;
-  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-left: 0px;
 }
 
 #contact-page .contact-page-container .contact-us .body .row:after {
@@ -2387,9 +2336,10 @@ body {
 #contact-page .contact-page-container .contact-us .body .button {
   height: auto;
   width: 100%;
+  padding: 0px 20px;
 }
 
-#contact-page .contact-page-container .contact-us .body .button .send-btn {
+#contact-page .contact-page-container .contact-us .body .button .btn-success {
   float: right;
   margin-right: 10px;
   font-size: 15px;
@@ -2401,7 +2351,7 @@ body {
   outline: none;
 }
 
-#contact-page .contact-page-container .contact-us .body .button .send-btn:hover {
+#contact-page .contact-page-container .contact-us .body .button .btn-success:hover {
   background: #f27c66;
   color: white;
   -webkit-transition: all .5s ease;
@@ -2410,7 +2360,7 @@ body {
 }
 
 #contact-page .contact-page-container .course-info {
-  width: 40%;
+  width: 45%;
 }
 
 #contact-page .contact-page-container .course-info h1 {
@@ -2418,6 +2368,10 @@ body {
   font-size: 35px;
   color: #454545;
   font-weight: 500;
+}
+
+#contact-page .contact-page-container .course-info p {
+  margin: 5px 0px;
 }
 
 #contact-page .contact-page-container .course-info p a {
@@ -2431,6 +2385,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
+  margin: 5px 0px;
 }
 
 #map {
@@ -2661,6 +2616,7 @@ body {
 #footer .footer-container .body .footer-courses-1 .course-info h2 {
   color: white;
   font-size: medium;
+  font-weight: 500;
 }
 
 #footer .footer-container .body .footer-courses-1 .course-info p {
@@ -2689,6 +2645,7 @@ body {
 #footer .footer-container .body .footer-courses-2 .course-info h2 {
   color: white;
   font-size: medium;
+  font-weight: 500;
 }
 
 #footer .footer-container .body .footer-courses-2 .course-info p {
@@ -2824,6 +2781,7 @@ body {
   display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  line-height: 1rem;
 }
 
 #header-slider .navbar ul li {
@@ -2896,10 +2854,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 100px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #about-page .about-page-container .accordion {
-  width: 50%;
+  width: 45%;
   font-family: 'Raleway', sans-serif;
   color: #454545;
 }
@@ -2916,8 +2876,18 @@ body {
   background: #18BB7C;
 }
 
-#about-page .about-page-container .accordion .bs-example .accordion .card .card-header h2 .btn {
-  padding: 2px 15px;
+#about-page .about-page-container .accordion .bs-example .accordion .card {
+  border: solid 1px #e2e2e2;
+  border-radius: 0px;
+}
+
+#about-page .about-page-container .accordion .bs-example .accordion .card .card-header .mb-0 {
+  border-radius: 5px;
+}
+
+#about-page .about-page-container .accordion .bs-example .accordion .card .card-header .mb-0 .btn btn-link:hover {
+  border-color: white;
+  text-decoration: none;
 }
 
 #about-page .about-page-container .accordion .accordion .fa {
@@ -2925,11 +2895,21 @@ body {
 }
 
 #about-page .about-page-container .img {
-  width: 47%;
+  width: 45%;
+}
+
+#about-page .about-page-container .img h1 {
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+  padding: 40px 0px;
+}
+
+#about-page .about-page-container .img img {
+  width: 100%;
   height: auto;
   overflow: hidden;
   border-radius: 5px;
-  margin-left: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }

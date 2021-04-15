@@ -22,6 +22,8 @@ body{
                 font-family: 'EB Garamond', serif;
                 font-weight: 550;
                 font-size: 30px;
+                margin-top: 0px;
+                margin-bottom: 0;
                 a{
                     text-decoration: none;
                     color: $main-color-gray;
@@ -39,14 +41,12 @@ body{
                 display: flex;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 300;
-                
                 li{
                     list-style: none;
                     border-right: 1px solid lightgray;
                     margin-right: 8px;
                     padding: 0px 15px;
                     font-size: 500;
-                
                     a{
                     font-style: none;
                     color: $main-color-gray;
@@ -130,7 +130,7 @@ body{
                     text-align: center;
                     width: 100px;
                     
-                    padding: 5px 0px;
+                    padding: 10px 0px;
                     border-radius: 10px 0px;
                     font-size: 20px;
                 }
@@ -305,6 +305,7 @@ body{
                         h2{
                             color: white;
                             font-size: medium;
+                            font-weight: 500;
                             
                         }
                         p{
@@ -328,6 +329,7 @@ body{
                         h2{
                             color: white;
                             font-size: medium;
+                            font-weight: 500;
                         }
                         p{
                             font-size: small;

@@ -19,6 +19,8 @@
                 font-family: 'EB Garamond', serif;
                 font-weight: 550;
                 font-size: 30px;
+                margin-top: 0px;
+                margin-bottom: 0px;
                 a{
                     text-decoration: none;
                     color: $main-color-gray;
@@ -36,6 +38,7 @@
                 display: flex;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 300;
+                line-height: 1rem;
                 
                 li{
                     list-style: none;
@@ -105,16 +108,16 @@
     .contact-page-container{
         display: flex;
         margin: auto;
-        width: 70%;
+        width: 80%;
         margin-top: 100px;
         margin-bottom: 100px;
         font-family: 'Raleway', sans-serif;
         
         .contact-us{
             margin-right: 10px;
-            width: 60%;
+            width: 55%;
             h1{
-            margin: 15px 0px;
+            margin: 20px 0px;
             font-size: 35px;
             color: $main-color-gray-dark;
             font-weight: 500;
@@ -128,16 +131,17 @@
                 input[type=text], select, textarea {
                     width: 100%;
                     padding: 12px;
-                    border: 1px solid #ccc;
-                    // border-radius: 5px 0px;
+                    border: 1px solid rgb(218, 218, 218);
+                    border-radius: 1px 1px;
                     resize: vertical;
-                     outline: 1px solid rgba(19,160,105,.3);
+                    outline: 3px solid rgba(14, 70, 48, 0.3);
+                
                 }
                 .col-75 {
                     float: left;
                     width: 95%;
-                    margin-top: 6px;
-                    margin-left: 10px;
+                    margin-bottom: 15px;
+                    margin-left: 0px;
                     
                     
                 }
@@ -146,13 +150,15 @@
                     content: "";
                     display: table;
                     clear: both;
+
                    
                 }
                 
                 .button{
                     height: auto;
                     width: 100%;
-                  .send-btn{
+                    padding: 0px 20px;
+                  .btn-success{
                     float: right;
                     margin-right: 10px;
                     font-size: 15px;
@@ -174,7 +180,7 @@
             }
         }
         .course-info{
-            width: 40%;
+            width: 45%;
             h1{
                 margin: 20px 0px;
                 font-size: 35px;
@@ -182,6 +188,7 @@
                 font-weight: 500;
             }
             p{
+                margin: 5px 0px;
                 a{
                 color: $main-color-gray;
                 text-decoration: none;
@@ -194,6 +201,7 @@
                 font-size: 20px;
                 line-height: 30px;
                 font-weight: 500;
+                margin: 5px 0px;
                 
             }
         }
@@ -362,6 +370,7 @@
                         h2{
                             color: white;
                             font-size: medium;
+                            font-weight: 500;
                             
                         }
                         p{
@@ -385,6 +394,7 @@
                         h2{
                             color: white;
                             font-size: medium;
+                            font-weight: 500;
                         }
                         p{
                             font-size: small;

@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
     <title>Greenwich Academy - Kurslarımız</title>
 
 </head>
 <body>
+
     <section id="header-slider">
         <div class="header">
             <div class="logo">
-                <img src="../../static/app/img/logo.png" alt="">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
                 <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
             </div>
             <div class="navbar" >
@@ -30,12 +31,10 @@
                     <li><a href="{{url_for('courses')}}">Kurslarımız</a></li>
                     <li><a href="{{url_for('education_abroad')}}">Xaricdə təhsil</a></li>
                     <li class="nav-contact" style="border: none;"><a  href="{{url_for('contact')}}">Bizimlə əlaqə</a></li>
-                    
                 </ul>
                 
             </div>
         </div>
-    
 </section>
 <!-- Courses head -->
 <section id="courses-head" style="background: url(../../static/app/img/courses-bg.jpg) ; " >
@@ -44,67 +43,129 @@
     </div>
 </section>
 <!-- courses-page -->
-<section id="courses-page">
-    <div class="courses-page-container" style="margin-right: 365px;">
-        <!-- 1ci sira -->
-        <div class="courses-row">
-             <div class="col-4" style="margin-right: 30px;">
+<style>
+    body{
+        margin: 0px auto;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.2rem;
+    }
+    #courses-page{
+       margin: auto;
+    }
+    .grid-container{
+        padding: 50px 0px;
+        width: 65%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .grid-item{
+        
+        height: 450px;
+        width: auto;
+        overflow: hidden;
+        object-fit: cover;
+        color: white;
+        border-radius: 10px;
+    }
+    .grid-item img{
+        overflow: hidden;
+        height: 280px;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .title{
+        padding: 15px;
+        background:#333333;
+        margin: -4px 0px;
+    }
+    .desc{
+        background-color: #AD9E8A;
+        padding: 17px;
+    }
+</style>
+<section id="courses-page" style="background-image: url(../../static/app/img/timelinebg.png);">
+    <div class="grid-container">
+        {% for courses in courses %}
+      <div class="grid-item">
+          <img src="{{ url_for('static', filename='uploads/' + courses.img) }}" alt="">
+          <div class="title">{{courses.title}}</div>
+          <div class="desc">{{courses.desc}}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+
+
+
+
+
+
+
+            <!-- <div class="col-4" style="margin-right: 30px;">
                 <div class="img">
                     <img src="../../static/app/img/courses-1.jpg" alt="">
-                    <!-- <div class="learn-more-1">Learn more</div> -->
                 </div>
                 <div class="course-name">Ümumi İngilis dili</div>
                 <div class="course-info-1">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
-            </div>
-            <div class="col-4" style="margin-right: 30px;">
+            </div> -->
+
+
+            <!-- <div class="col-4" style="margin-right: 30px;">
                 <div class="img">
                     <img src="../../static/app/img/courses-2.jpg" alt="">
-                    <!-- <div class="learn-more-2">Learn more</div> -->
+                
                 </div>
                 <div class="course-name">Biznes İngilis dili</div>
                 <div class="course-info-2">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
-            </div>
-            <div class="col-4">
+            </div> -->
+
+
+            <!-- <div class="col-4">
                 <div class="img">
                     <img src="../../static/app/img/for-kids.jpg" alt="">
-                    <!-- <div class="learn-more-3">Learn more</div> -->
                 </div>
                 <div class="course-name">Uşaqlar üçün İngilis dili</div>
                 <div class="course-info-3">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
             </div>
             
-        </div>
-        <!-- 2ci sira -->
-        <div class="courses-row">
+        </div> -->
+        
+        <!-- <div class="courses-row">
             <div class="col-4" style="margin-right: 30px;">
-               <div class="img">
-                   <img src="../../static/app/img/chess.jpg" alt="">
-                   <!-- <div class="learn-more-4">Learn more</div> -->
-               </div>
-               <div class="course-name">Şahmat dərsləri</div>
-               <div class="course-info-4">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
-           </div>
-           <div class="col-4" style="margin-right: 30px;">
-               <div class="img">
-                   <img src="../../static/app/img/abituriyent.jpg" alt="">
-                   <!-- <div class="learn-more-5">Learn more</div> -->
-               </div>
-               <div class="course-name">Abituriyent hazırlığı</div>
-               <div class="course-info-5">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
-           </div>
-           <div class="col-4">
-               <div class="img">
-                   <img src="../../static/app/img/abituriyent00.jpg" alt="">
-                   <!-- <div class="learn-more-6">Learn more</div> -->
-               </div>
-               <div class="course-name">Talk-up qrupları</div>
-               <div class="course-info-6">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
-           </div>
-           
-       </div>
-          
-            
-    </div>
+            <div class="img">
+                <img src="../../static/app/img/chess.jpg" alt="">
+
+            </div>
+            <div class="course-name">Şahmat dərsləri</div>
+            <div class="course-info-4">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
+</div> -->
+
+
+<!-- <div class="col-4" style="margin-right: 30px;">
+            <div class="img">
+            <img src="../../static/app/img/abituriyent.jpg" alt="">
+
+            </div>
+            <div class="course-name">Abituriyent hazırlığı</div>
+            <div class="course-info-5">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
+        </div> -->
+
+
+        <!-- <div class="col-4">
+            <div class="img">
+                <img src="../../static/app/img/abituriyent00.jpg" alt="">
+            </div>
+            <div class="course-name">Talk-up qrupları</div>
+            <div class="course-info-6">Lorem ipsum dolor sit amet Quod at doloribus dolores ipsum perspiciatis, quisquam accusamus error a rem similique praesentium autem aperiam mollitia dignissimos optio dolore sapiente ullam odio!</div>
+        </div>
+
+</div> -->
+
+
+  
 </section>
 <!-- footer -->
 <section id="footer">

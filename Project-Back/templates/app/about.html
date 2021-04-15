@@ -9,8 +9,6 @@
 <link rel="stylesheet" href="../../static/app/css/about.css">
 <link rel="stylesheet" href="../../static/app/css/color.css">
 <link rel="stylesheet" href="../../static/app/css/homepage.css">
-<link rel="stylesheet" href="../../static/app/css/grid.css">
-<link rel="stylesheet" href="../../static/app/css/common.css">
 <link rel="stylesheet" href="../../static/app/sass/pages/color.scss">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,6 +19,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
+
 <title>Greenwich Academy - Haqqımızda</title>
 
 
@@ -75,11 +75,18 @@
 
         </div>
     </div> -->
+    <style>
+        body{
+        margin: 0px;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.2rem;
+    }
+    </style>
 
     <section id="header-slider">
         <div class="header">
             <div class="logo">
-                <img src="../../static/app/img/logo.png" alt="">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
                 <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
             </div>
             <div class="navbar" >
@@ -113,7 +120,7 @@
         <div class="card">
             <div class="card-header" id="headingOne" style="padding: 0px;" >
                 <h2 class="mb-0" style="background: #18BB7C;" >
-                    <button type="button"  style="color: white;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" style="padding: 2px 15px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Donec sollicitudin lacus?</button>									
+                    <button type="button"  style="color: white;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" style="padding: 2px 15px;"><i class="fa fa-plus" style="font-size: 15px; "></i> Donec sollicitudin lacus?</button>									
                 </h2>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -125,7 +132,7 @@
         </div>
         <div class="card">
             <div class="card-header" id="headingTwo" style="padding: 0px;">
-                <h2 class="mb-0" style="background: #18BB7C;"  >
+                <h2 class="mb-0" style="background: #e4ba83;"  >
                     <button type="button"  style="color: white;" class="btn btn-link collapsed"  data-toggle="collapse" data-target="#collapseTwo" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Aenean commodo ligula eget dolor?</button>
                 </h2>
             </div>
@@ -137,7 +144,7 @@
         </div>
         <div class="card">
             <div class="card-header" id="headingThree" style="padding: 0px;">
-                <h2 class="mb-0" style="background: #18BB7C;" >
+                <h2 class="mb-0" style="background: #d36c59;" >
                     <button type="button"  style="color: white;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Nesciunt quia minima enim?</button>                     
                 </h2>
             </div>
@@ -149,7 +156,7 @@
         </div>
         <div class="card">
             <div class="card-header" id="headingFour" style="padding: 0px;">
-                <h2 class="mb-0" style="background: #18BB7C;" >
+                <h2 class="mb-0" style="background: #4bbcd7;" >
                     <button type="button"  style="color: white;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Moreno gotro ja pisit amet?</button>                     
                 </h2>
             </div>
@@ -161,7 +168,7 @@
         </div>
         <div class="card">
             <div class="card-header" id="headingFive" style="padding: 0px;">
-                <h2 class="mb-0" style="background: #18BB7C;" style="color: white;"  >
+                <h2 class="mb-0" style="background: #969696;" style="color: white;"  >
                     <button type="button"  style="color: white;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Cum, sed dolor quis animi?</button>                     
                 </h2>
             </div>
@@ -175,6 +182,7 @@
 </div>
             </div>
             <div class="img">
+                <h1 style="color: rgb(255, 255, 255);" > Photo :</h1>
                 <img src="../../static/app/img/about.jpg" alt="">
             </div>
         </div>
@@ -185,16 +193,16 @@
         <h1>Müəllimlərimiz</h1>
         <div class="teachers-container">
             {% for teacher in teachers %}
-                    <div class="teacher" >
+                    <div class="teacher" style="width: 100%;">
                         <div class="img">
                         <img src="{{ url_for('static', filename='uploads/' + teacher.img) }}" alt="">
                         </div>
-                        <div class="info-1" >
+                        <div class="info-1" style="background-color: #ad9e8a;">
                         <h1>{{teacher.name}}</h1>
                         <h5>{{teacher.title}}</h5>
                         <div class="info-line"></div>
-                        <p>{{teacher.desc}}</p>
-                        <p style="font-size: smaller;"><a href="tel:+994556842554"></a>{{teacher.phone}}</p>
+                        <p style="margin-bottom: 0px;">{{teacher.desc}}</p>
+                        <!-- <p style="font-size: smaller; margin:0px; margin-top:0px; "><a href="tel:+994556842554"></a>{{teacher.phone}}</p> -->
                         </div>
                     </div>
             {% endfor %}

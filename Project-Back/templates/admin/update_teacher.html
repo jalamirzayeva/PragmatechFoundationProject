@@ -2,28 +2,28 @@
 
 {% block content %}
 <section class="slider">
-  <div class="container">
+  <div class="container"style="padding: 20px 0px;">
       <div class="row">
           <div class="col-12">
-              <h4 class="my-3">Update Teacher Information</h4>
+              <h4 class="my-3">Yenilə</h4>
               <form action="/admin/teachers/update/{{update.id}}" method="POST" enctype="multipart/form-data">
                 <div class="from-group my-2">
-                    <input type="text" class="form-control" name="name" placeholder=" Name" value={{update.name}}>
+                    <input type="text" class="form-control" name="name" placeholder=" Ad Soyad" value={{update.name}}>
                 </div>
               <div class="from-group my-2">
-                  <input type="text" class="form-control" name="title" placeholder=" Title" value={{update.title}}>
+                  <input type="text" class="form-control" name="title" placeholder=" Status" value={{update.title}}>
               </div>
               <div class="from-group my-2">
-                  <input type="text" class="form-control" name="desc" placeholder=" Description" value={{update.desc}}>
+                  <input type="text" class="form-control" name="desc" placeholder=" Fənn" value={{update.desc}}>
               </div>
             <div class="from-group my-2">
-                <input type="text" class="form-control" name="phone" placeholder=" Phone" value={{update.phone}}>
+                <input type="text" class="form-control" name="phone" placeholder=" Telefon" value={{update.phone}}>
             </div>
               <div class="from-group my-2">
                   <input type="file" class="form-control" name="img" placeholder=" Image" >
               </div>
               <div class="from-group my-2">
-                  <input type="submit" class="btn btn-success" value="Update">
+                  <input type="submit" class="btn btn-success" value="Yenilə">
               </div>
               </form>
           </div>

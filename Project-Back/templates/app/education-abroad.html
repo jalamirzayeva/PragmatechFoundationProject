@@ -12,15 +12,24 @@
             <link rel="stylesheet" href="../../static/app/css/grid.css">
             <link rel="stylesheet" href="../../static/app/css/common.css">
             <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+            <link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
+
         <title>Greenwich Academy - Xaricdə Təhsil</title>
     
     </head>
 <body>
+    <style>
+        body{
+        margin: 0px;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.0rem;
+    }
+    </style>
     <!-- header -->
     <section id="header-slider">
-        <div class="header">
+        <div class="header ">
             <div class="logo">
-                <img src="../../static/app/img/logo.png" alt="">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
                 <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
             </div>
             <div class="navbar" >
@@ -37,39 +46,23 @@
         </div>
         
     </section>
-    <!-- Education-abroad head -->
+    <!-- Education-abroad header-->
     <section id="education-abroad-head" style="background: url(../../static/app/img/education-abroad.jpg)">
         <div class="education-abroad-text">
             Xaricdə Təhsil
         </div>
     </section>
-    <!-- Education-abroad-page -->
+    <!-- Education-abroad-main -->
     <section id="education-abroad">
         <div class="education-abroad-container">
             {% for cities in cities %}
             <div class="country">
-                <img src="{{ url_for('static', filename='uploads/' + cities.img) }}" alt="">
+                <img src="{{url_for('static', filename='uploads/' + cities.img)}}" alt="">
                 <div class="country-text">
-                <h1 style="background-color: #f27c66;">{{cities.title}}</h1>
-                <p>{{cities.desc}}</p>
-                </div>
+                <h1 style="background-color: #e4ba83; font-weight: 400;">{{cities.title}}</h1>
+                <p>{{cities.desc}}</p></div>
             </div>
             {% endfor %}
-        
-        <!-- <div class="country">
-            <img src="../../static/app/img/ukranie.jpg" alt="">
-            <div class="country-text">
-                <h1  style="background-color: #e4ba83;">Ukraniya</h1>
-                <p>Lorem ipsum dolor sit amet consLorem ipsum dolor sit atque fLorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste corrupti nisi hic minima at ratione voluptas et repudiandae corporis. Vero alias repellat dolorum. Numquam atque facere perspiciatis saepe ipsa?acere perspiciatis saepe ipsa?ectetur adipisicing elit. Molestias iste corrupti nisi hic minima at ratione voluptas et repudiandae corporis. Vero alias repellat doloruLorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste corrupti nisi hic minima at ratione voluptas et repudiandae corporis. Vero alias repellat dolorum. Numquam atque facere perspiciatis saepe ipsa?m. Numquam atque facere perspiciatis saepe ipsa?</p>
-            </div>
-        </div>
-        <div class="country"> 
-            <img src="../../static/app/img/london.jpg" alt="">
-            <div class="country-text">
-                <h1  style="background-color: #18BB7C;">London</h1>
-                <p>Lorem ipsum dolor sit amet consLorem ipsum dolor sit atque fLorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste corrupti nisi hic minima at ratione voluptas et repudiandae corporis. Vero alias repellat dolorum. Numquam atque facere perspiciatis saepe ipsa?acere perspiciatis saepe ipsa?ectetur adipisicing elit. Molestias iste corrupti nisi hic minima at ratione voluptas et repudiandae corporis. Vero alias repellat doloruLorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste corrupti nisi hic minima at ratione voluptas et repudiandae corporis. Vero alias repellat dolorum. Numquam atque facere perspiciatis saepe ipsa?m. Numquam atque facere perspiciatis saepe ipsa?</p>
-            </div>
-        </div> -->
         </div>
     </section>
     <!-- FOOTER -->
@@ -134,7 +127,7 @@
                     <div class="footer-courses-2">
                         <img src="../../static/app/img/site-photos0.jpg" alt="">
                         <div class="course-info">
-                            <h2>Uşaqlar üçün İngilis dili</h2>
+                            <h2 >Uşaqlar üçün İngilis dili</h2>
                             <p>Lorem cum iquatur loremque mollitia cupisequuntur laudantium optio aut?</p>
                         </div>
                     </div>

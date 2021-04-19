@@ -1,0 +1,412 @@
+@import '../color.scss';
+body{
+    margin: 0px;
+}
+#header-slider{
+    width: 100%;
+    // header
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 70px;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                height: 60px;
+                width: 76px;
+                object-fit: cover;
+            }
+            h3{
+                font-family: 'EB Garamond', serif;
+                font-weight: 550;
+                font-size: 30px;
+                margin-top: 0px;
+                margin-bottom: 0;
+                a{
+                    text-decoration: none;
+                    color: $main-color-gray;
+                    cursor: pointer;
+                }
+                
+            }
+            
+            }
+        }
+
+        .navbar{
+           
+            ul{
+                display: flex;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+                li{
+                    list-style: none;
+                    border-right: 1px solid lightgray;
+                    margin-right: 8px;
+                    padding: 0px 15px;
+                    font-size: 500;
+                    a{
+                    font-style: none;
+                    color: $main-color-gray;
+                    text-decoration: none;
+                    &:hover{
+                        color: $main-color-pink;
+                        transition: all .3s ease;
+                        cursor: pointer;
+                        
+                    }
+                    }
+                }
+                
+            }
+        }
+        .search{
+            border-radius: 10px 0px;
+            background: $main-color-pink;
+            padding: 10px 20px;
+            cursor: pointer;
+                i{
+                    
+                    color: rgb(255, 255, 255);
+                   
+                } &:hover {
+                    background: rgba(19,160,105,.7);
+                    transition: all .4s ease;
+                    
+                    
+                }
+                
+
+            }
+    
+    }
+#education-abroad-head{
+    font-family: 'Raleway', sans-serif;
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    background: black;
+    
+    
+
+    
+    .education-abroad-text{
+        margin: auto;
+        margin-top: 80px;
+        color: $main-color-pink;
+        padding: 15px 0px;
+        border-radius: 8px 0px;
+        width: 15%;
+        text-align: center;
+        background:rgba(255,255,255,.9);
+        font-size: 25px;
+    }
+}
+#education-abroad{
+    width: 100%;
+    .education-abroad-container{
+        font-family: 'Raleway', sans-serif;
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        .country{
+            height: auto;
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+            img{
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            .country-text{
+                padding: 50px;
+                h1{
+                    color: white;
+                    text-align: center;
+                    width: 100px;
+                    
+                    padding: 10px 0px;
+                    border-radius: 10px 0px;
+                    font-size: 20px;
+                }
+                p{
+                    margin-top: 20px;
+                    color: $main-color-gray;
+                    line-height: 22px;
+                    
+
+                }
+            }
+        }
+        
+    }
+}
+#footer{
+    height: auto;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background: #2D3339;
+    .footer-container{
+        margin: auto;
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        .footer-boxes{
+            padding: 0px 0px;
+            margin: 35px 15px;
+            width: 370px;
+            
+            
+            .head-1{
+                border-radius: 7px 0px;
+                display: flex;
+                justify-content: space-between;
+                background: $main-color-pink;
+                font-weight: 300;
+                box-sizing: border-box;
+                padding: 15px ;
+                font-size: 25px;
+                .text{
+                    color: white;
+                }
+                .icon-1{
+                    color: #2D3339;
+                }
+                
+            }
+            .body{
+                color: $main-color-lightgray;
+                font-family: 'Raleway', sans-serif;
+                .box-1{
+                    margin-top:10px;
+                }
+                p{
+                    margin: 5px 0px;
+                }
+                .contact-info{
+                    .tel{
+                        display: flex;
+                        justify-content: baseline;
+                        align-items: center;
+                        i{
+                            margin-right: 10px;
+                        }
+                        p{
+                            color: $main-color-lightgray;
+                        }
+                    }
+                    .mail{
+                        display: flex;
+                        justify-content: baseline;
+                        align-items: center;
+                        i{
+                            margin-right: 10px;
+                        }
+                        p{
+                            color: $main-color-lightgray;
+                        }
+                    }
+                    .address{
+                        display: flex;
+                        justify-content: baseline;
+                        align-items: center;
+                        i{
+                            margin-right: 10px;
+                        }
+                        p{
+                            color: $main-color-lightgray;
+                        }
+                    }
+                    }
+                    .social{
+                    display: flex;
+                    margin-top: 10px;
+                    .insta,.twitter,.youtube{
+                        border: 1px solid $main-color-pink;
+                        border-radius: 10px 0px;
+                        background-color:#2D3339 ;
+                        margin-right: 10px;
+                        outline: none;
+                        i{
+                            color: white;
+                            padding: 15px 10px;
+                            font-size: 1.1em;
+                            
+                        }
+                        
+                        
+                        &:hover{
+                            background: $main-color-pink;
+                            transition: all .3s ease;
+                            cursor: pointer;
+                        }
+                    }
+                    .fb{
+                        border: 1px solid $main-color-pink;
+                        border-radius: 10px 0px;
+                        background-color:#2D3339 ;
+                        margin-right: 10px;
+                        outline: none;
+                        i{
+                            color: white;
+                            padding: 15px 12px;
+                            font-size: 1.1em;
+                            
+                            
+                        }
+                        &:hover{
+                                background: $main-color-pink;
+                                transition: all .3s ease;
+                                cursor: pointer;
+                                
+                            }
+                        }
+                    
+                }
+                }
+                
+            }
+            .head-2{
+                border-radius:7px 0px ;
+                display: flex;
+                justify-content: space-between;
+                background: $main-color-yellow-dark;
+                font-weight: 300;
+                box-sizing: border-box;
+                padding: 15px ;
+                font-size: 25px;
+                .text{
+                    color: white;
+                }
+                .icon-2{
+                    color: #2D3339;
+                }
+            }
+            .body{
+                margin-top: 15px;
+                .footer-courses-1{
+                    display: flex;
+                    img{
+                        margin-top: 10px;
+                        height: 90px;
+                        width: 110px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+                    .course-info{
+                        padding: 10px;
+                        h2{
+                            color: white;
+                            font-size: medium;
+                            font-weight: 500;
+                            
+                        }
+                        p{
+                            font-size: small;
+                        }
+
+                    }
+                }
+                .footer-courses-2{
+                    display: flex;
+                    img{
+                        margin-top: 10px;
+                        height: 90px;
+                        width: 110px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                        
+                    }
+                    .course-info{
+                        padding: 10px;
+                        h2{
+                            color: white;
+                            font-size: medium;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-size: small;
+                        }
+
+                    }
+                }
+            }
+            .head-3{
+                border-radius:7px 0px ;
+                display: flex;
+                justify-content: space-between;
+                background: $main-color-green;
+                font-weight: 300;
+                box-sizing: border-box;
+                padding: 15px ;
+                font-size: 25px;
+                .text{
+                    color: white;
+                }
+                .icon-3{
+                    color: #2D3339;
+                }
+            }
+            .body{
+                
+                * {
+                    box-sizing: border-box;
+                }
+                
+                input[type=text], select, textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid transparent;
+                    background: rgba(255,255,255,0.9) ;
+                    border-radius: 5px 0px;
+                    resize: vertical;
+                    font-family: 'Raleway', sans-serif;
+                    outline: none;
+                }
+                .col-75 {
+                    float: left;
+                    width: 100%;
+                    margin-top: 6px;
+                    margin-left: 0px;
+                    background: #2D3339;
+                    
+                }
+
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                .row-button{
+                    float: right;
+                    margin-top: 5px;
+                    .send{
+                        border:1px solid  $main-color-green;
+                        color: $main-color-green;
+                        background: #2D3339;
+                        border-radius: 10px 0px;
+                        font-family: 'Raleway', sans-serif;
+                        padding: 10px 40px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        outline: none;
+                        &:hover{
+                            background: $main-color-green;
+                            color: white;
+                            transition: all .5s ease;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+

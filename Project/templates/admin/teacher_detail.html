@@ -1,0 +1,20 @@
+{% extends 'admin/layout.html' %}
+
+{% block content %}
+<div class="container"style="padding: 20px 0px;">
+  <div class="row">
+      <div class="col-12">
+          <h1 class="my-4">Detallı məlumat</h1>
+          <div class="card" >
+              <img class="card-img-top"style="width: 25rem; height:auto" src="/static/uploads/{{teachersdetail.img}}" alt="">
+              <div class="card-body">
+          </div>
+          <ul class="list-group">
+              <li class="list-group-item">Id:{{teachersdetail.id}}</li>
+              <li class="list-group-item">Ad:{{teachersdetail.name}}</li>
+              <li class="list-group-item">Status:{{teachersdetail.title}}</li>
+              <li class="list-group-item">Fənn:{{teachersdetail.desc}}</li>
+              <li class="list-group-item">Telefon:{{teachersdetail.phone}}</li>
+          </ul>
+  </div>
+{% endblock %}

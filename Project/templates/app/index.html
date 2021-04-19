@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en",scroll-behavior:smooth; >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css"rel="stylesheet"/>
+   
+
+    <link rel="stylesheet" href="../../static/app/css/homepage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
+
+
+
+
+    <title>Greenwich Academy</title>
+</head>
+<body>
+    <style>
+    body{
+        margin: 0px;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.2rem;
+    }
+    .grid-container{
+      
+        width: 65%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .grid-item{
+        
+        height: 450px;
+        width: auto;
+        overflow: hidden;
+        object-fit: cover;
+        color: white;
+        border-radius: 10px;
+    }
+    .grid-item img{
+        overflow: hidden;
+        height: 280px;
+        object-fit: cover;
+        width: auto;
+    }
+    
+    .title{
+        padding: 15px;
+        background:#333333;
+        margin: -4px 0px;
+    }
+    .desc{
+        padding: 17px;
+    }
+
+
+    </style>
+
+<!-- HEADER -->
+    <section id="header-slider">
+        <div class="header">
+            <div class="logo">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
+                <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
+            </div>
+            <div class="navbar" >
+                <ul >
+                    <li><a href="{{url_for('index')}}">Əsas səhifə</a></li>
+                    <li><a href="{{url_for('about')}}">Haqqımızda</a></li>
+                    <li><a href="{{url_for('courses')}}">Kurslarımız</a></li>
+                    <li><a href="{{url_for('education_abroad')}}">Xaricdə təhsil</a></li>
+                    <li class="nav-contact" style="border: none;"><a  href="{{url_for('contact')}}">Bizimlə əlaqə</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+
+
+        <div class="slider">
+            <div class="slider-container">
+    
+                <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for slider in slider %}
+                            {% if slider.id==1 %}
+                            <div class="carousel-item active">
+                                <div class="introduction">
+                            <h1>{{slider.title}}</h1>
+                            <p>{{slider.desc}}</p>
+                                </div>
+                                <img  src="{{ url_for('static', filename='uploads/' + slider.img) }}" style="object-fit: cover;" class="d-block w-100" alt="...">
+                            </div>
+                            {%else%}
+                            <div class="carousel-item">
+                                <div class="introduction-2">
+                                <h1>{{slider.title}}</h1>
+                                <p>{{slider.desc}}</p>
+                                </div>
+                                <img  src="{{ url_for('static', filename='uploads/' + slider.img) }}" style="object-fit: cover;" class="d-block w-100" alt="...">
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselFade" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselFade" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
+                
+            </div>
+            
+        </div>
+        <!-- Divided (3 color)-->
+        <div class="three-bottom">
+            <div class="first">...</div>
+            <div class="second">...</div>
+            <div class="third">...</div>
+        </div>
+        </div>
+    </section>
+    
+<!-- LATEST COURSES -->
+    <section id="latest-courses" style="background: url(../../static/app/img/timelinebg.png);">
+        <h1>Kurslarımız</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../../static/app/img/courses-2.jpg" alt="">
+                <div class="title">Ümumi İngilis dili</div>
+                <div class="desc " style="background-color: #CB6856;">the 1500s, when a fivpesetting, remaining essentially unchanged. Itum passages, and more recently with desktop publishing software like Aldus PageMaker including versi</div>
+            </div>
+            <div class="grid-item">
+                <img src="../../static/app/img/chess.jpg" alt="">
+                <div class="title">Şahmat</div>
+                <div class="desc " style="background-color: #E4BA83;">the 1500s, when a fivpesetting, remaining essentially unchanged. Itum passages, and more recently with desktop publishing software like Aldus PageMaker including versi</div>
+            </div>
+            <div class="grid-item">
+                <img src="../../static/app/img/for-kids.jpg" alt="">
+                <div class="title">Uşaqlar üçün İngilis dili</div>
+                <div class="desc " style="background-color: #18BB7C;">the 1500s, when a fivpesetting, remaining essentially unchanged. Itum passages, and more recently with desktop publishing software like Aldus PageMaker including versi</div>
+            </div>
+            
+        </div>
+        <div class="button">
+                <button class="learn-more">
+                    <a href="{{url_for('courses')}}"> Daha ətraflı</a>
+                </button>
+            </div>
+        
+</section>
+
+
+<!-- OUR TEACHERS -->
+<section id="teachers">
+    <h1>Müəllimlərimiz</h1>
+    <div class="teachers-container">
+        <div class="teacher">
+            <div class="img">
+                <img src="../../static/app/img/teacher-1.jpg" alt="">
+            </div>
+            <div class="info-1">
+                <h1>Vəfa Əmrahova</h1>
+                <h5>Təsisçi - Müəllim</h5>
+                <div class="info-line">
+                
+                </div>
+                <p>İngilis dili</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <div class="img">
+                <img src="../../static/app/img/teacher-2.jpg" alt="">
+            </div>
+            <div class="info-2">
+                <h1>Tural Əmrahov</h1>
+                <h5>Müəllim</h5>
+                <div class="info-line">
+                
+                </div>
+                <p>Ofis-proqramları</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <div class="img">
+                <img src="../../static/app/img/teacher-3.jpg" alt="">
+            </div>
+            <div class="info-3">
+                <h1>Gülnar Yusifova</h1>
+                <h5>Müəllim</h5>
+                <div class="info-line">
+                
+                </div>
+                <p>Şahmat</p>
+            </div>
+        </div>
+        
+    </div>
+</section> 
+
+
+<div class="three-bottom">
+        <div class="first">...</div>
+        <div class="second">...</div>
+        <div class="third">...</div>
+    </div>
+
+
+<!-- Video il eetrafli melumat -->
+<section id="video-inform" style="background: url(../../static/app/img/brickwall.png);">
+   
+    <div class="video-inform-container">
+        <!-- <div class="video">
+            <video width="100%" controls>
+                <source src="../../static/app/img/Greenwich-video.mp4" type="video/mp4">
+              
+            </video>
+        </div>
+        <div class="inform">
+            <h1>Haqqımızda daha ətraflı məlumat üçün videoya keçid edə bilərsiniz</h1>
+            <p>Lorem ipsum  sit, ametrolor us nulla amet, sint et, dolores sapiente quis eligendi hic veritatis? Illo perspiciatis nesciunt repudiandae accusantium a.</p>
+            <button class="watch-more">
+                <a href="{{url_for('about')}}">Daha ətraflı</a>
+            </button>
+        </div> -->
+        <div class="video" id="my-video">
+        <video
+        class="video-js vjs-theme-forest"
+        controls
+        preload="auto"
+        width="500"
+        height="auto"
+        poster="../../static/app/img/about.jpg"
+        data-setup="{}" > 
+
+        
+       
+        <source src="../../static/app/img/Greenwich-video.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+</div>
+      <div class="inform">
+        <h1>Haqqımızda daha ətraflı məlumat üçün videoya keçid edə bilərsiniz</h1>
+        <p>Lorem ipsum  sit, ametquis eligendi hic veritatis? Illoepudiandae accusantium a.</p>
+        <button class="watch-more">
+            <a href="{{url_for('about')}}">Daha ətraflı</a>
+        </button>
+    </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<section id="footer">
+    <div class="footer-container">
+        <div class="footer-boxes">
+            <div class="head-1">
+                <div class="text">Haqqımızda</div>
+                <div class="icon-1">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+            <div class="body">
+                <p class="box-1">Lorem ipsum dolor sit   t amet cons t amet consecteecteamet ipiro at explicabo esicing elit. Itaque rem libero at explicabo enim doloribus lauda sit amet ntium, optio</p>
+                <div class="contact-info">
+                    <div class="tel">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+994 55 684 25 54</p>
+                    </div>
+                    <div class="mail">
+                        <i class="fas fa-envelope"></i>
+                        <p>greenwich.academy10@gmail.com</p>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-home"></i>
+                        <p>Sumqayıt,Sülh plaza. 
+                            3-cü mərtəbə-otaq 307</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <button class="insta">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button class="fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-boxes">
+            <div class="head-2">
+                <div class="text">Kurslarımız</div>
+                <div class="icon-2">
+                    <i class="far fa-clock"></i>
+                </div>
+            </div>
+            <div class="body">
+                <div class="footer-courses-1">
+                    <img src="../../static/app/img/site-photos.jpg" alt="">
+                    <div class="course-info">
+                        <h2>Ümumi İngilis dili</h2>
+                        <p>Lorem cconsequatique mollita cupisequuntur laudantium optio aut?</p>
+                    </div>
+                </div>
+                <div class="footer-courses-2">
+                    <img src="../../static/app/img/site-photos0.jpg" alt="">
+                    <div class="course-info">
+                        <h2>Uşaqlar üçün İngilis dili</h2>
+                        <p>Lorem cum iquatur loremque mollitia cupisequuntur laudantium optio aut?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-boxes">
+            <div class="head-3">
+                <div class="text"> Bizimlə əlaqə</div>
+                <div class="icon-3">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+            </div>
+                <div class="body">
+                    <div class="row">
+                        
+                        <div class="col-75" style="background: #2D3339;">
+                        <input type="text" id="fname" name="firstname" placeholder="Ad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Telefon">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="" style="height: 100px;" ></textarea>
+                        </div>
+                    </div>
+                    <div class="row-button">
+                        <button class="send">
+                            Send 
+                        </button>
+                    </div>
+               
+                <!-- <table class="footer-navbar" style="color: #b0b0b0; ">
+                        <tbody>
+                           <tr><td>Əsas səhifə</td></tr>
+                           <tr><td>Haqqımızda</td></tr>
+                           <tr><td>Kurslarımız</td></tr>
+                           <tr><td>Xaricdə təhsil</td></tr>
+                           <tr><td>Bizimlə əlaqə</td></tr>
+                           <style>
+                               td{
+                                   padding: 15px 0px;
+                               }
+                           </style>
+                        </tbody>
+                  </table> -->
+            </div>
+            <!-- <div class="body">
+                <div class="row">
+                    
+                    <div class="col-75" style="background: #2D3339;">
+                    <input type="text" id="fname" name="firstname" placeholder="Ad">
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Telefon">
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="" style="height: 100px;" ></textarea>
+                    </div>
+                </div>
+                <div class="row-button">
+                    <button class="send">
+                        Send 
+                    </button>
+                </div> -->
+            </div>
+</section>
+<!-- JAVASCRIPT -->
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

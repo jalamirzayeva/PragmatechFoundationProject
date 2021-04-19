@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../static/app/css/about.css">
+<link rel="stylesheet" href="../../static/app/css/color.css">
+<link rel="stylesheet" href="../../static/app/css/homepage.css">
+<link rel="stylesheet" href="../../static/app/sass/pages/color.scss">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
+
+<title>Greenwich Academy - Haqqımızda</title>
+
+
+</head>
+<body>
+
+    <!-- Responsive dropdown menu -->
+
+        <!-- <div id="responsive-dropdown-menu">
+
+            <div class="responsive-dropdown-menu-heading">
+                Menu
+
+                <a href="#" class="close-div" onclick="close_responsive()">
+                    <i class="fas fa-times"></i>
+                </a>
+
+
+            </div>
+
+            <ul class="responsive-dropdown-menu-ul">
+
+                <li>
+                    <a href="./index.html">Əsas səhifə
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html">Haqqımızda
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./courses.html">Kurslarımız
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./education-abroad.html">Xaricdə təhsil
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">Bizimlə əlaqə
+                  
+                        <i class="fas fa-angle-right"></i>
+                  
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div> -->
+    <style>
+        body{
+        margin: 0px;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.2rem;
+    }
+    </style>
+
+    <section id="header-slider">
+        <div class="header">
+            <div class="logo">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
+                <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
+            </div>
+            <div class="navbar" >
+                <ul >
+                    <li><a href="{{url_for('index')}}">Əsas səhifə</a></li>
+                    <li><a href="{{url_for('about')}}">Haqqımızda</a></li>
+                    <li><a href="{{url_for('courses')}}">Kurslarımız</a></li>
+                    <li><a href="{{url_for('education_abroad')}}">Xaricdə təhsil</a></li>
+                    <li class="nav-contact" style="border: none;"><a  href="{{url_for('contact')}}">Bizimlə əlaqə</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+        
+    </section>
+    <!-- About head -->
+    <section id="about-head" style="background: url(../../static/app/img/courses-bg.jpg)" >
+    <div class="about-text">
+        Haqqımızda
+    </div>
+    </section>
+    <section id="about-page">
+        <div class="about-page-container">
+
+            <!-- accordion -->
+            <div class="accordion">
+                <h1>Üstünlüklərimiz :</h1>
+<div class="bs-example" style="margin: 0px;" style="width: 100%;" >
+    <div class="accordion" id="accordionExample" style="width: 100%;">
+        <div class="card">
+            <div class="card-header" id="headingOne" style="padding: 0px;" >
+                <h2 class="mb-0" style="background: #18BB7C;" >
+                    <button type="button"  style="color: white;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" style="padding: 2px 15px;"><i class="fa fa-plus" style="font-size: 15px; "></i> Donec sollicitudin lacus?</button>									
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sed dolor quis animi dolorem, magnam alias nemo nihil consequatur explicabo ullam quae magni! Id, quasi aliquid? Nesciunt quia minima enim.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo" style="padding: 0px;">
+                <h2 class="mb-0" style="background: #e4ba83;"  >
+                    <button type="button"  style="color: white;" class="btn btn-link collapsed"  data-toggle="collapse" data-target="#collapseTwo" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Aenean commodo ligula eget dolor?</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sed dolor quis animi dolorem, magnam alias nemo nihil consequatur explicabo ullam quae magni! Id, quasi aliquid? Nesciunt quia minima enim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree" style="padding: 0px;">
+                <h2 class="mb-0" style="background: #d36c59;" >
+                    <button type="button"  style="color: white;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Nesciunt quia minima enim?</button>                     
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sed dolor quis animi dolorem, magnam alias nemo nihil consequatur explicabo ullam quae magni! Id, quasi aliquid? Nesciunt quia minima enim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour" style="padding: 0px;">
+                <h2 class="mb-0" style="background: #4bbcd7;" >
+                    <button type="button"  style="color: white;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Moreno gotro ja pisit amet?</button>                     
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sed dolor quis animi dolorem, magnam alias nemo nihil consequatur explicabo ullam quae magni! Id, quasi aliquid? Nesciunt quia minima enim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive" style="padding: 0px;">
+                <h2 class="mb-0" style="background: #969696;" style="color: white;"  >
+                    <button type="button"  style="color: white;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" style="padding: 5px;"><i class="fa fa-plus" style="font-size: 15px;"></i> Cum, sed dolor quis animi?</button>                     
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sed dolor quis animi dolorem, magnam alias nemo nihil consequatur explicabo ullam quae magni! Id, quasi aliquid? Nesciunt quia minima enim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="img">
+                <h1 style="color: rgb(255, 255, 255);" > Photo :</h1>
+                <img src="../../static/app/img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- teachers -->
+    <section id="teachers">
+        <h1>Müəllimlərimiz</h1>
+        <div class="teachers-container">
+            {% for teacher in teachers %}
+                    <div class="teacher" style="width: 100%;">
+                        <div class="img">
+                        <img src="{{ url_for('static', filename='uploads/' + teacher.img) }}" alt="">
+                        </div>
+                        <div class="info-1" style="background-color: #ad9e8a;">
+                        <h1>{{teacher.name}}</h1>
+                        <h5>{{teacher.title}}</h5>
+                        <div class="info-line"></div>
+                        <p style="margin-bottom: 0px;">{{teacher.desc}}</p>
+                        <!-- <p style="font-size: smaller; margin:0px; margin-top:0px; "><a href="tel:+994556842554"></a>{{teacher.phone}}</p> -->
+                        </div>
+                    </div>
+            {% endfor %}
+            
+            <!-- <div class="teacher">
+                <div class="img">
+                    <img src="../../static/app/img/teacher-2.jpg" alt="">
+                </div>
+                <div class="info-2">
+                    <h1>Tural Əmrahov</h1>
+                    <h5>Müəllim</h5>
+                    <div class="info-line">
+                    
+                    </div>
+                    <p>Ofis-proqramları </p>
+                    <p><a href="mailto:greenwich.academy10@gmail.com" style="text-decoration: none; color: white; font-size: small;">greenwich.academy10@gmail.com</a></p>
+                    <p style="font-size: smaller;"><a href="tel:+994556842554"></a>+994 55 684 25 54</p>
+
+                </div>
+            </div>
+            <div class="teacher">
+                <div class="img">
+                    <img src="../../static/app/img/teacher-3.jpg" alt="">
+                </div>
+                <div class="info-3">
+                    <h1>Gülnar Yusifova</h1>
+                    <h5>Müəllim</h5>
+                    <div class="info-line">
+                    
+                    </div>
+                    <p>Şahmat</p>
+                    <p><a href="mailto:greenwich.academy10@gmail.com" style="text-decoration: none; color: white; font-size: smaller;">greenwich.academy10@gmail.com</a></p>
+                    <p style="font-size: smaller;"><a href="tel:+994556842554"></a>+994 55 684 25 54</p>
+                </div>
+            </div>
+            
+        </div> -->
+    </section>
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer-boxes">
+                <div class="head-1">
+                    <div class="text">Haqqımızda</div>
+                    <div class="icon-1">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p class="box-1">Lorem ipsum dolor sit   t amet cons t amet consecteecteamet ipiro at explicabo esicing elit. Itaque rem libero at explicabo enim doloribus lauda sit amet ntium, optio</p>
+                    <div class="contact-info">
+                        <div class="tel">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+994 55 684 25 54</p>
+                        </div>
+                        <div class="mail">
+                            <i class="fas fa-envelope"></i>
+                            <p>greenwich.academy10@gmail.com</p>
+                        </div>
+                        <div class="address">
+                            <i class="fas fa-home"></i>
+                            <p>Sumqayıt,Sülh plaza. 
+                                3-cü mərtəbə-otaq 307</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <button class="insta">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                        <button class="fb">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-boxes">
+                <div class="head-2">
+                    <div class="text">Kurslarımız</div>
+                    <div class="icon-2">
+                        <i class="far fa-clock"></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="footer-courses-1">
+                        <img src="../../static/app/img/site-photos.jpg" alt="">
+                        <div class="course-info">
+                            <h2>Ümumi İngilis dili</h2>
+                            <p>Lorem cconsequatique mollita cupisequuntur laudantium optio aut?</p>
+                        </div>
+                    </div>
+                    <div class="footer-courses-2">
+                        <img src="../../static/app/img/site-photos0.jpg" alt="">
+                        <div class="course-info">
+                            <h2>Uşaqlar üçün İngilis dili</h2>
+                            <p>Lorem cum iquatur loremque mollitia cupisequuntur laudantium optio aut?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-boxes">
+                <div class="head-3">
+                    <div class="text">Bizimlə əlaqə</div>
+                    <div class="icon-3">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="row">
+                        
+                        <div class="col-75" style="background: #2D3339;">
+                        <input type="text" id="fname" name="firstname" placeholder="Ad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Telefon">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="" style="height: 100px;" ></textarea>
+                        </div>
+                    </div>
+                    <div class="row-button">
+                        <button class="send">
+                            Send 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JAVASCRIPT -->
+<script src="../../static/app/js/responsive.js"></script>
+<script src="../../static/app/js/about.js"></script>
+</body>
+</html>

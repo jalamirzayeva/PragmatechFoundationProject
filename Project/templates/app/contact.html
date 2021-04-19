@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../static/app/css/contact.css">
+        <link rel="stylesheet" href="../../static/app/css/common.css">
+        <link rel="stylesheet" href="../../static/app/css/grid.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link rel="icon" href="../../static/app/img/logo.ico" type="image/gif" sizes="40x40">
+
+    
+        <title>Greenwich Academy - Bizimlə əlaqə</title>
+    
+    </head>
+<body>
+    <style>
+    body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2rem;
+    }
+    </style>
+    <!-- header -->
+    <section id="header-slider">
+        <div class="header">
+            <div class="logo">
+                <!-- <img src="../../static/app/img/logo.png" alt=""> -->
+                <h3 style="margin-bottom: 0px;"> <a href="{{url_for('index')}}">Greenwich Academy</a></h3>
+            </div>
+            <div class="navbar" >
+                <ul >
+                    <li><a href="{{url_for('index')}}">Əsas səhifə</a></li>
+                    <li><a href="{{url_for('about')}}">Haqqımızda</a></li>
+                    <li><a href="{{url_for('courses')}}">Kurslarımız</a></li>
+                    <li><a href="{{url_for('education_abroad')}}">Xaricdə təhsil</a></li>
+                    <li class="nav-contact" style="border: none;"><a  href="{{url_for('contact')}}">Bizimlə əlaqə</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+        
+    </section>
+    <!-- Contact header -->
+    <section id="contact-head" style="background: url(../../static/app/img/contact-bg.jpg); ">
+        <div class="contact-text">
+            Bizimlə əlaqə
+        </div>
+    </section>
+    <!-- contact-main -->
+    <section id="contact-page">
+        <div class="contact-page-container">
+                <div class="contact-us">
+                    <h1> Bizimlə əlaqə saxlayın</h1>
+                    <div class="body">
+                        <form action="{{url_for('contact')}}" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            
+                            <div class="col-75" >
+                            <input type="text" name="name" placeholder="Ad Soyad" style="font-style: normal;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-75">
+                            <input type="text"  name="email" placeholder="E-mail" style="font-style: normal;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-75">
+                        <textarea name="content" placeholder=" Mesajınız" style="font-style: normal;"  ></textarea>
+                            </div>
+                            
+                        </div>
+                        <div class="button">
+                            <input type="submit" class="btn-success"  value="Göndər">
+                        </div>
+                        </form>
+                </div>
+                
+                </div>
+                <div class="course-info">
+                    <h1>Ofisimiz</h1>
+                    <p style="margin:20px 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi aliquid repudiandae porro blanditiis. Odio voluptatem, praesentium enim ducimus non similique sint ab eum odit ea minima incidunt nisi ullam?</p>
+                    <h3>Ünvan :</h3>
+                    <p><a href="https://goo.gl/maps/7fz6CpKhEKjP662s8">Sülh küçəsi | Asan xidmətlə üzbəüz</a></p>
+                    <h3>Telefon :</h3>
+                    <p><a href="tel:+4733378901">(+994 55) 684 25 54</a></p>
+                    <h3>E-poçt :</h3>
+                    <p><a href="mailto:someone@example.com">greenwich.academy10@gmail.com</a></p>
+                
+                </div>
+        </div>
+    </section>
+    <!-- map -->
+    <section id="map">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.0253635913027!2d49.66255461518915!3d40.58519555330061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403096dd2774e5f5%3A0x73d100a665e392ef!2sSulh%20Plaza!5e0!3m2!1saz!2s!4v1616602493196!5m2!1saz!2s" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    <!-- footer -->
+            <section id="footer">
+                <div class="footer-container">
+                    <div class="footer-boxes">
+                        <div class="head-1">
+                            <div class="text">Haqqımızda</div>
+                            <div class="icon-1">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <p class="box-1">Lorem ipsum dolor sit   t amet cons t amet consecteecteamet ipiro at explicabo esicing elit. Itaque rem libero at explicabo enim doloribus lauda sit amet ntium, optio</p>
+                            <div class="contact-info">
+                                <div class="tel">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <p>+994 55 684 25 54</p>
+                                </div>
+                                <div class="mail">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>greenwich.academy10@gmail.com</p>
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <p>Sumqayıt,Sülh plaza. 
+                                        3-cü mərtəbə-otaq 307</p>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <button class="insta">
+                                    <i class="fab fa-instagram"></i>
+                                </button>
+                                <button class="fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-boxes">
+                        <div class="head-2">
+                            <div class="text">Kurslarımız</div>
+                            <div class="icon-2">
+                                <i class="far fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="footer-courses-1">
+                                <img src="../../static/app/img/site-photos.jpg" alt="">
+                                <div class="course-info">
+                                    <h2>Ümumi İngilis dili</h2>
+                                    <p>Lorem cconsequatique mollita cupisequuntur laudantium optio aut?</p>
+                                </div>
+                            </div>
+                            <div class="footer-courses-2">
+                                <img src="../../static/app/img/site-photos0.jpg" alt="">
+                                <div class="course-info">
+                                    <h2>Uşaqlar üçün İngilis dili</h2>
+                                    <p>Lorem cum iquatur loremque mollitia cupisequuntur laudantium optio aut?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-boxes">
+                        <div class="head-3">
+                            <div class="text">Bizimlə əlaqə</div>
+                            <div class="icon-3">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                
+                                <div class="col-75" style="background: #2D3339;">
+                                <input type="text" id="fname" name="firstname" placeholder="Ad">
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Telefon">
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="" style="height: 100px;" ></textarea>
+                                </div>
+                            </div>
+                            <div class="row-button">
+                                <button class="send">
+                                    Göndər 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</body>
+</html>
